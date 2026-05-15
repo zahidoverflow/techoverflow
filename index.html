@@ -3,51 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechOverflow - premium subscriptions delivered instantly via Telegram.">
     <title>TechOverflow</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>TechOverflow</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">FAQ</a>
-            <a href="#">Contact</a>
+    <header class="site-header">
+        <div class="brand">
+            <span class="brand-mark">TO</span>
+            <div>
+                <strong>TechOverflow</strong>
+                <p>Premium subscriptions delivered instantly via Telegram.</p>
+            </div>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+            <a href="#products">Products</a>
+            <a href="#request">Request</a>
+            <a href="#contact">Contact</a>
         </nav>
+        <a class="cta-link" href="https://t.me/bointex" target="_blank" rel="noreferrer">Buy on Telegram</a>
     </header>
 
     <main>
-        <section class="products">
-            <h2>Our Products</h2>
-            <div class="filter-container">
-                <input type="text" id="search" placeholder="Search for products...">
-                <div class="filter-buttons">
-                    <button class="filter-button active" data-category="all">All</button>
-                    <button class="filter-button" data-category="Productivity">Productivity</button>
-                    <button class="filter-button" data-category="Dev Tools">Dev Tools</button>
-                    <button class="filter-button" data-category="AI">AI</button>
-                    <button class="filter-button" data-category="Education">Education</button>
-                </div>
-            </div>
-            <div class="product-grid">
-                </div>
+        <section class="hero">
+            <h1>All Products</h1>
+            <p class="hero-copy">Browse our complete catalog of premium subscriptions.</p>
         </section>
-        <section class="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+
+        <section id="products" class="catalog">
+            <article class="catalog-block">
+                <div class="catalog-heading">
+                    <p class="eyebrow">All Products</p>
+                    <h2>Featured subscriptions</h2>
+                </div>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-topline">
+                            <span class="badge available">Available</span>
+                            <span class="category">Productivity</span>
+                        </div>
+                        <h3>n8n Cloud Starter</h3>
+                        <p>Workflow automation platform</p>
+                        <div class="meta"><strong>$30</strong><span>1 year</span></div>
+                        <a href="https://t.me/bointex" target="_blank" rel="noreferrer">Buy on Telegram</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-topline">
+                            <span class="badge available">Available</span>
+                            <span class="category">Productivity</span>
+                        </div>
+                        <h3>Superhuman</h3>
+                        <p>The fastest email experience ever made</p>
+                        <div class="meta"><strong>$5</strong><span>1 year</span></div>
+                        <a href="https://t.me/bointex" target="_blank" rel="noreferrer">Buy on Telegram</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-topline">
+                            <span class="badge available">Available</span>
+                            <span class="category">Productivity</span>
+                        </div>
+                        <h3>Microsoft 365</h3>
+                        <p>Complete Office suite with Word, Excel, PowerPoint, and more</p>
+                        <div class="meta"><strong>$10</strong><span>1 year</span></div>
+                        <a href="https://t.me/bointex" target="_blank" rel="noreferrer">Buy on Telegram</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-topline">
+                            <span class="badge available">Available</span>
+                            <span class="category">Dev Tools</span>
+                        </div>
+                        <h3>Canva Business</h3>
+                        <p>Premium design platform with brand kits and collaboration tools</p>
+                        <div class="meta"><strong>$20</strong><span>1 year</span></div>
+                        <a href="https://t.me/bointex" target="_blank" rel="noreferrer">Buy on Telegram</a>
+                    </article>
+                </div>
+            </article>
+
+            <article class="catalog-block">
+                <div class="catalog-heading compact">
+                    <p class="eyebrow">All Products</p>
+                    <h2>More popular picks</h2>
+                </div>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-topline">
+                            <span class="badge available">Available</span>
+                            <span class="category">Productivity</span>
+                        </div>
+                        <h3>Railway Hobby</h3>
+                        <p>Cloud deployment platform for developers</p>
+                        <div class="meta"><strong>$20</strong><span>1 year</span></div>
+                        <a href="https://t.me/bointex" target="_blank" rel="noreferrer">Buy on Telegram</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-topline">
+                            <span class="badge available">Available</span>
+                            <span class="category">AI</span>
+                        </div>
+                        <h3>Mobbin Team (10 Seats)</h3>
+                        <p>Design reference library for teams with 10 seat access</p>
+                        <div class="meta"><strong>$10</strong><span>1 year</span></div>
+                        <a href="https://t.me/bointex" target="_blank" rel="noreferrer">Buy on Telegram</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-topline">
+                            <span class="badge available">Available</span>
+                            <span class="category">AI</span>
+                        </div>
+                        <h3>ElevenLabs (1 Month)</h3>
+                        <p>AI voice generation and text-to-speech platform</p>
+                        <div class="meta"><strong>$4</strong><span>1 month</span></div>
+                        <a href="https://t.me/bointex" target="_blank" rel="noreferrer">Buy on Telegram</a>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-topline">
+                            <span class="badge available">Available</span>
+                            <span class="category">Productivity</span>
+                        </div>
+                        <h3>Notion Business</h3>
+                        <p>All-in-one workspace for notes, docs, and collaboration</p>
+                        <div class="meta"><strong>$20</strong><span>1 year</span></div>
+                        <a href="https://t.me/bointex" target="_blank" rel="noreferrer">Buy on Telegram</a>
+                    </article>
+                </div>
+            </article>
+
+            <article class="catalog-block request-block">
+                <div class="catalog-heading compact">
+                    <p class="eyebrow">Don't see what you need?</p>
+                    <h2>Request a subscription</h2>
+                </div>
+                <p>Request a subscription and we’ll get back to you.</p>
+                <form id="request" class="request-form">
+                    <input type="text" name="name" placeholder="Your Name" aria-label="Your Name">
+                    <input type="text" name="service" placeholder="Requested Service" aria-label="Requested Service">
+                    <textarea name="notes" placeholder="Additional Notes" aria-label="Additional Notes"></textarea>
+                    <button type="submit">Send Request via Telegram</button>
+                </form>
+            </article>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 TechOverflow. All rights reserved.</p>
+    <footer id="contact" class="site-footer">
+        <div>
+            <strong>TechOverflow</strong>
+            <p>Premium subscriptions delivered instantly via Telegram.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#products">Products</a>
+            <a href="#request">Request</a>
+            <a href="https://t.me/bointex" target="_blank" rel="noreferrer">Telegram</a>
+        </div>
+        <p>© 2026 TechOverflow. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
