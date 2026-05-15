@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechOverflow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TechOverflow</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2>Our Products</h2>
+            <div class="filter-container">
+                <input type="text" id="search" placeholder="Search for products...">
+                <div class="filter-buttons">
+                    <button class="filter-button active" data-category="all">All</button>
+                    <button class="filter-button" data-category="Productivity">Productivity</button>
+                    <button class="filter-button" data-category="Dev Tools">Dev Tools</button>
+                    <button class="filter-button" data-category="AI">AI</button>
+                    <button class="filter-button" data-category="Education">Education</button>
+                </div>
+            </div>
+            <div class="product-grid">
+                </div>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechOverflow. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
