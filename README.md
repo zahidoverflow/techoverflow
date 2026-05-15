@@ -1,6 +1,6 @@
 # Techoverflow
 
-Techoverflow is a static catalog site for premium subscriptions with a dedicated contact page for requests.
+Techoverflow is a lightweight static catalog site for premium subscriptions with a dedicated contact page for requests.
 
 ## Project structure
 
@@ -8,7 +8,7 @@ Techoverflow is a static catalog site for premium subscriptions with a dedicated
 .
 ├── assets/
 │   ├── icons/
-│   │   └── favicon.svg
+│   │   └── logo.svg
 │   └── images/
 │       └── og-cover.svg
 ├── contact.html
@@ -21,7 +21,7 @@ Techoverflow is a static catalog site for premium subscriptions with a dedicated
 ## Where to put assets
 
 - Put images in `assets/images/`
-- Put icons, favicons, and social preview art in `assets/icons/`
+- Put logos, icons, favicons, and social preview art in `assets/icons/`
 - Put fonts in `assets/fonts/`
 - Put any future downloadable files in `assets/files/`
 
@@ -30,3 +30,4 @@ Techoverflow is a static catalog site for premium subscriptions with a dedicated
 - The site is static and can be deployed directly from the repo root.
 - `contact.html` holds the request form; `index.html` stays focused on products.
 - `script.js` handles the WhatsApp handoff from the contact form.
+- Keep assets lightweight: prefer SVG for logos/icons and optimize any future images before adding them to `assets/images/`.

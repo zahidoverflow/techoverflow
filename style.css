@@ -20,17 +20,14 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-bottom: 5.5rem;
 }
 
 body {
     margin: 0;
-    font-family: 'Segoe UI', 'Courier New', Roboto, sans-serif;
-    background:
-        radial-gradient(circle at 20% 80%, rgba(0, 217, 255, 0.08) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(179, 36, 255, 0.08) 0%, transparent 50%),
-        linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: linear-gradient(180deg, #0a0e27 0%, #11152b 100%);
     color: var(--text);
-    background-attachment: fixed;
     position: relative;
 }
 
@@ -41,8 +38,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: 
-        radial-gradient(circle at 50% 50%, rgba(0, 217, 255, 0.03) 0%, transparent 50%);
+    background: radial-gradient(circle at 50% 50%, rgba(0, 217, 255, 0.02) 0%, transparent 55%);
     pointer-events: none;
     z-index: -1;
 }
@@ -61,16 +57,23 @@ a {
     position: sticky;
     top: 0;
     z-index: 10;
-    backdrop-filter: blur(20px);
-    background: rgba(11, 15, 40, 0.7);
-    border-bottom: 1px solid rgba(0, 217, 255, 0.1);
-    box-shadow: 0 0 40px rgba(0, 217, 255, 0.05);
+    background: rgba(11, 15, 40, 0.92);
+    border-bottom: 1px solid rgba(0, 217, 255, 0.08);
 }
 
 .brand {
     display: flex;
     align-items: center;
     gap: 0.9rem;
+}
+
+.brand-logo {
+    width: 2.75rem;
+    height: 2.75rem;
+    display: block;
+    border-radius: 0.8rem;
+    flex: 0 0 auto;
+    object-fit: contain;
 }
 
 .brand strong,
@@ -89,20 +92,6 @@ a {
     color: var(--muted);
 }
 
-.brand-mark {
-    width: 2.75rem;
-    height: 2.75rem;
-    border-radius: 0.9rem;
-    display: grid;
-    place-items: center;
-    background: linear-gradient(135deg, rgba(0, 217, 255, 0.2), rgba(179, 36, 255, 0.2));
-    color: var(--accent);
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    box-shadow: var(--glow), inset 0 0 20px rgba(0, 217, 255, 0.1);
-    border: 1px solid rgba(0, 217, 255, 0.3);
-}
-
 .site-nav {
     display: flex;
     flex-wrap: wrap;
@@ -118,7 +107,6 @@ a {
 .request-form button:hover {
     color: var(--accent);
     opacity: 1;
-    transition: all 0.3s ease;
 }
 
 .cta-link,
@@ -134,14 +122,20 @@ a {
     font-weight: 700;
     border: 1px solid var(--accent);
     cursor: pointer;
-    box-shadow: var(--glow);
+    box-shadow: none;
     transition: all 0.3s ease;
+}
+
+.site-nav a,
+.footer-links a,
+.mobile-nav__item {
+    transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
 }
 
 .cta-link:hover,
 .product-card a:hover,
 .request-form button:hover {
-    box-shadow: var(--glow), 0 0 40px rgba(0, 217, 255, 0.5);
+    box-shadow: none;
     transform: translateY(-2px);
 }
 
@@ -190,14 +184,11 @@ main {
 }
 
 .catalog-block {
-    background: rgba(17, 21, 43, 0.5);
+    background: rgba(17, 21, 43, 0.84);
     border: 1px solid rgba(0, 217, 255, 0.15);
     border-radius: 1.5rem;
     padding: 1.5rem;
-    box-shadow: 
-        0 0 30px rgba(0, 217, 255, 0.05),
-        inset 0 0 30px rgba(0, 217, 255, 0.02);
-    backdrop-filter: blur(10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
 }
 
 .catalog-heading {
@@ -223,7 +214,7 @@ main {
 }
 
 .product-card {
-    background: rgba(15, 20, 38, 0.6);
+    background: rgba(15, 20, 38, 0.88);
     border: 1px solid rgba(0, 217, 255, 0.2);
     border-radius: 1.25rem;
     padding: 1.1rem;
@@ -231,16 +222,13 @@ main {
     flex-direction: column;
     gap: 0.75rem;
     min-height: 16rem;
-    box-shadow: 0 0 20px rgba(0, 217, 255, 0.05);
-    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
     transition: all 0.3s ease;
 }
 
 .product-card:hover {
     border-color: rgba(0, 217, 255, 0.4);
-    box-shadow: 
-        0 0 20px rgba(0, 217, 255, 0.15),
-        inset 0 0 20px rgba(0, 217, 255, 0.05);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
     transform: translateY(-4px);
 }
 
@@ -298,10 +286,9 @@ main {
 
 .product-card a {
     width: 100%;
-    background: linear-gradient(135deg, rgba(0, 217, 255, 0.15), rgba(179, 36, 255, 0.1));
+    background: rgba(0, 217, 255, 0.1);
     color: var(--accent);
     border: 1px solid rgba(0, 217, 255, 0.3);
-    box-shadow: 0 0 15px rgba(0, 217, 255, 0.1);
 }
 
 .request-block {
@@ -322,9 +309,8 @@ main {
     border-radius: 0.95rem;
     padding: 0.95rem 1rem;
     font: inherit;
-    background: rgba(15, 20, 38, 0.6);
+    background: rgba(15, 20, 38, 0.9);
     color: var(--text);
-    backdrop-filter: blur(10px);
     transition: all 0.3s ease;
 }
 
@@ -332,13 +318,35 @@ main {
 .request-form textarea:focus {
     outline: none;
     border-color: var(--accent);
-    box-shadow: 0 0 20px rgba(0, 217, 255, 0.2);
-    background: rgba(15, 20, 38, 0.8);
+    background: rgba(15, 20, 38, 1);
 }
 
 .request-form textarea {
     min-height: 8rem;
     resize: vertical;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .site-header {
+        padding: 1rem;
+    }
+
+    .catalog-block {
+        padding: 1rem;
+    }
+
+    .product-card {
+        padding: 1rem;
+    }
+
+    .brand-logo {
+        width: 2.25rem;
+        height: 2.25rem;
+    }
 }
 
 .site-footer {
@@ -375,7 +383,7 @@ main {
 }
 
 .contact-footer a:hover {
-    text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+    text-decoration: underline;
 }
 
 @media (max-width: 1024px) {
@@ -388,10 +396,22 @@ main {
     .site-header {
         flex-direction: column;
         align-items: flex-start;
+        padding: 1rem;
     }
 
     .site-nav {
-        gap: 0.9rem;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .site-nav a,
+    .cta-link {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .site-header > .cta-link {
+        display: none;
     }
 
     .catalog-heading {
@@ -409,7 +429,47 @@ main {
 
     main,
     .site-footer {
-        width: min(100% - 1rem, 1180px);
+        width: min(100% - 0.75rem, 1180px);
+    }
+
+    .mobile-nav {
+        position: fixed;
+        left: 0.5rem;
+        right: 0.5rem;
+        bottom: 0.5rem;
+        z-index: 20;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.5rem;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        background: rgba(10, 14, 39, 0.96);
+        border: 1px solid rgba(0, 217, 255, 0.12);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+    }
+
+    .mobile-nav__item {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 3rem;
+        padding: 0.75rem 0.5rem;
+        border-radius: 0.85rem;
+        background: rgba(17, 21, 43, 0.92);
+        color: var(--text);
+        font-weight: 700;
+        font-size: 0.92rem;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .mobile-nav__item--accent {
+        background: linear-gradient(135deg, var(--accent), var(--accent-alt));
+        color: #000;
+        border-color: rgba(0, 217, 255, 0.3);
+    }
+
+    body {
+        padding-bottom: 5.5rem;
     }
 }
 
@@ -429,7 +489,7 @@ main {
 /* Disable heavy fixed background on small devices to avoid jank */
 @media (max-width: 768px) {
     body {
-        background-attachment: scroll;
+        background: #0a0e27;
     }
 
     body::before {
@@ -453,5 +513,62 @@ main {
     .request-form {
         width: 100%;
         max-width: 100%;
+    }
+
+    .brand-logo {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .hero {
+        padding: 1.25rem 0 1rem;
+    }
+
+    .hero h1 {
+        font-size: clamp(1.9rem, 8vw, 2.4rem);
+    }
+
+    .hero-copy {
+        font-size: 0.98rem;
+        line-height: 1.55;
+    }
+
+    .catalog-block {
+        border-radius: 1.15rem;
+    }
+
+    .product-card {
+        gap: 0.7rem;
+    }
+
+    .meta strong {
+        font-size: 1.35rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .site-header,
+    .catalog-block,
+    .product-card {
+        border-radius: 1rem;
+    }
+
+    .brand p {
+        font-size: 0.88rem;
+        line-height: 1.35;
+    }
+
+    .catalog-block {
+        padding: 0.95rem;
+    }
+
+    .product-card {
+        padding: 0.95rem;
+    }
+
+    .mobile-nav {
+        left: 0.35rem;
+        right: 0.35rem;
+        bottom: 0.35rem;
     }
 }
