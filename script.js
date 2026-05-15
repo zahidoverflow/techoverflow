@@ -7,6 +7,7 @@ document.querySelectorAll('.request-form').forEach(form => {
         
         const message = `Hi! I'm ${name} and I'm interested in: ${service}. ${notes ? 'Notes: ' + notes : ''}`;
         const whatsappUrl = `https://wa.me/8801707370774?text=${encodeURIComponent(message)}`;
-        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+        const w = window.open(whatsappUrl, '_blank');
+        if (w) w.opener = null;
     });
 });

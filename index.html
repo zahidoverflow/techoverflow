@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Techoverflow - premium subscriptions delivered instantly via Telegram.">
+    <meta name="description" content="Techoverflow - premium subscriptions delivered instantly via WhatsApp.">
     <title>Techoverflow</title>
+    <link rel="canonical" href="https://techoverflow.tech/">
+    <meta property="og:title" content="Techoverflow">
+    <meta property="og:description" content="Premium subscriptions delivered instantly via WhatsApp.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://techoverflow.tech/">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,9 +25,9 @@
         <nav class="site-nav" aria-label="Primary">
             <a href="#products">Products</a>
             <a href="#contact">Contact</a>
-            <a href="https://wa.me/8801707370774" target="_blank" rel="noreferrer">WhatsApp</a>
+            <a href="https://wa.me/8801707370774" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         </nav>
-        <a class="cta-link" href="https://wa.me/8801707370774?text=Hi!%20I%27m%20interested%20in%20Techoverflow%20products" target="_blank" rel="noreferrer">Buy on WhatsApp</a>
+        <a class="cta-link" href="https://wa.me/8801707370774?text=Hi!%20I%27m%20interested%20in%20Techoverflow%20products" target="_blank" rel="noopener noreferrer">Buy on WhatsApp</a>
     </header>
 
     <main>
@@ -45,7 +51,7 @@
                         <h3>n8n Cloud Starter</h3>
                         <p>Workflow automation platform</p>
                         <div class="meta"><strong>$30</strong><span>1 year</span></div>
-                        <a href="https://wa.me/8801707370774?text=Hi!%20I%27m%20interested%20in%20Techoverflow%20products" target="_blank" rel="noreferrer">Buy on WhatsApp</a>
+                        <a href="https://wa.me/8801707370774?text=Hi!%20I%27m%20interested%20in%20Techoverflow%20products" target="_blank" rel="noopener noreferrer">Buy on WhatsApp</a>
                     </article>
                     <article class="product-card">
                         <div class="product-topline">
@@ -55,7 +61,7 @@
                         <h3>Superhuman</h3>
                         <p>The fastest email experience ever made</p>
                         <div class="meta"><strong>$5</strong><span>1 year</span></div>
-                        <a href="https://wa.me/8801707370774?text=Hi!%20I%27m%20interested%20in%20Techoverflow%20products" target="_blank" rel="noreferrer">Buy on WhatsApp</a>
+                        <a href="https://wa.me/8801707370774?text=Hi!%20I%27m%20interested%20in%20Techoverflow%20products" target="_blank" rel="noopener noreferrer">Buy on WhatsApp</a>
                     </article>
                     <article class="product-card">
                         <div class="product-topline">
@@ -65,7 +71,7 @@
                         <h3>Microsoft 365</h3>
                         <p>Complete Office suite with Word, Excel, PowerPoint, and more</p>
                         <div class="meta"><strong>$10</strong><span>1 year</span></div>
-                        <a href="https://wa.me/8801707370774?text=Hi!%20I%27m%20interested%20in%20Techoverflow%20products" target="_blank" rel="noreferrer">Buy on WhatsApp</a>
+                        <a href="https://wa.me/8801707370774?text=Hi!%20I%27m%20interested%20in%20Techoverflow%20products" target="_blank" rel="noopener noreferrer">Buy on WhatsApp</a>
                     </article>
                     <article class="product-card">
                         <div class="product-topline">
@@ -75,7 +81,7 @@
                         <h3>Canva Business</h3>
                         <p>Premium design platform with brand kits and collaboration tools</p>
                         <div class="meta"><strong>$20</strong><span>1 year</span></div>
-                        <a href="https://wa.me/8801707370774?text=Hi!%20I%27m%20interested%20in%20Techoverflow%20products" target="_blank" rel="noreferrer">Buy on WhatsApp</a>
+                        <a href="https://wa.me/8801707370774?text=Hi!%20I%27m%20interested%20in%20Techoverflow%20products" target="_blank" rel="noopener noreferrer">Buy on WhatsApp</a>
                     </article>
                 </div>
             </article>
@@ -94,7 +100,7 @@
                         <h3>Railway Hobby</h3>
                         <p>Cloud deployment platform for developers</p>
                         <div class="meta"><strong>$20</strong><span>1 year</span></div>
-                        <a href="https://wa.me/8801707370774?text=Hi!%20I%27m%20interested%20in%20Techoverflow%20products" target="_blank" rel="noreferrer">Buy on WhatsApp</a>
+                        <a href="https://wa.me/8801707370774?text=Hi!%20I%27m%20interested%20in%20Techoverflow%20products" target="_blank" rel="noopener noreferrer">Buy on WhatsApp</a>
                     </article>
                     <article class="product-card">
                         <div class="product-topline">
@@ -136,9 +142,15 @@
                 </div>
                 <p>Request a subscription and we’ll get back to you.</p>
                 <form id="request" class="request-form">
-                    <input type="text" name="name" placeholder="Your Name" aria-label="Your Name">
-                    <input type="text" name="service" placeholder="Requested Service" aria-label="Requested Service">
-                    <textarea name="notes" placeholder="Additional Notes" aria-label="Additional Notes"></textarea>
+                    <label class="sr-only" for="req-name">Your Name</label>
+                    <input id="req-name" type="text" name="name" placeholder="Your Name" aria-label="Your Name" required>
+
+                    <label class="sr-only" for="req-service">Requested Service</label>
+                    <input id="req-service" type="text" name="service" placeholder="Requested Service" aria-label="Requested Service" required>
+
+                    <label class="sr-only" for="req-notes">Additional Notes</label>
+                    <textarea id="req-notes" name="notes" placeholder="Additional Notes" aria-label="Additional Notes" required></textarea>
+
                     <button type="submit">Send Request via WhatsApp</button>
                 </form>
             </article>
@@ -154,14 +166,14 @@
             <a href="#products">Products</a>
             <a href="mailto:zahid@techoverflow.tech">Email</a>
             <a href="tel:+8809638526929">Call</a>
-            <a href="https://wa.me/8801707370774" target="_blank" rel="noreferrer">WhatsApp</a>
-            <a href="https://www.facebook.com/messages/t/61584972500238/" target="_blank" rel="noreferrer">Facebook DM</a>
+            <a href="https://wa.me/8801707370774" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a href="https://www.facebook.com/messages/t/61584972500238/" target="_blank" rel="noopener noreferrer">Facebook DM</a>
         </div>
         <div class="contact-footer">
             <p><strong>Contact:</strong></p>
-            <p><a href="tel:+8809638526929">+880 9638-526929</a> · <a href="https://wa.me/8801707370774" target="_blank" rel="noreferrer">WhatsApp</a></p>
+            <p><a href="tel:+8809638526929">+880 9638-526929</a> · <a href="https://wa.me/8801707370774" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
             <p><a href="mailto:zahid@techoverflow.tech">zahid@techoverflow.tech</a></p>
-            <p><a href="https://www.facebook.com/messages/t/61584972500238/" target="_blank" rel="noreferrer">Facebook DM</a></p>
+            <p><a href="https://www.facebook.com/messages/t/61584972500238/" target="_blank" rel="noopener noreferrer">Facebook DM</a></p>
         </div>
         <p>© 2026 TechOverflow. All rights reserved.</p>
     </footer>
