@@ -1,6 +1,12 @@
 document.querySelectorAll('.request-form').forEach(form => {
     form.addEventListener('submit', event => {
         event.preventDefault();
-        window.open('https://t.me/bointex', '_blank', 'noopener,noreferrer');
+        const name = form.querySelector('input[name="name"]').value || 'Customer';
+        const service = form.querySelector('input[name="service"]').value || 'a subscription';
+        const notes = form.querySelector('textarea[name="notes"]').value || '';
+        
+        const message = `Hi! I'm ${name} and I'm interested in: ${service}. ${notes ? 'Notes: ' + notes : ''}`;
+        const whatsappUrl = `https://wa.me/8801707370774?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
     });
 });

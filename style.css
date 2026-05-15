@@ -1,14 +1,17 @@
 :root {
-    color-scheme: light;
-    --bg: #f7f4ec;
-    --surface: #ffffff;
-    --surface-soft: #fbfaf7;
-    --text: #201b16;
-    --muted: #6f665c;
-    --border: #e7dfd2;
-    --accent: #121212;
-    --accent-soft: #f1ece3;
-    --shadow: 0 20px 60px rgba(35, 28, 19, 0.08);
+    color-scheme: dark;
+    --bg: #0a0e27;
+    --surface: #11152b;
+    --surface-soft: #0f1426;
+    --text: #e0e8ff;
+    --muted: #8890b8;
+    --border: #1e2749;
+    --accent: #00d9ff;
+    --accent-alt: #b324ff;
+    --accent-soft: #1a3a4a;
+    --glow: 0 0 20px rgba(0, 217, 255, 0.3);
+    --glow-alt: 0 0 20px rgba(179, 36, 255, 0.2);
+    --shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
 }
 
 * {
@@ -21,11 +24,27 @@ html {
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', 'Courier New', Roboto, sans-serif;
     background:
-        radial-gradient(circle at top left, rgba(229, 216, 192, 0.38), transparent 28%),
-        linear-gradient(180deg, #fcfaf6 0%, var(--bg) 100%);
+        radial-gradient(circle at 20% 80%, rgba(0, 217, 255, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(179, 36, 255, 0.08) 0%, transparent 50%),
+        linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
     color: var(--text);
+    background-attachment: fixed;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 50% 50%, rgba(0, 217, 255, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: -1;
 }
 
 a {
@@ -42,9 +61,10 @@ a {
     position: sticky;
     top: 0;
     z-index: 10;
-    backdrop-filter: blur(14px);
-    background: rgba(252, 250, 246, 0.88);
-    border-bottom: 1px solid rgba(231, 223, 210, 0.9);
+    backdrop-filter: blur(20px);
+    background: rgba(11, 15, 40, 0.7);
+    border-bottom: 1px solid rgba(0, 217, 255, 0.1);
+    box-shadow: 0 0 40px rgba(0, 217, 255, 0.05);
 }
 
 .brand {
@@ -75,11 +95,12 @@ a {
     border-radius: 0.9rem;
     display: grid;
     place-items: center;
-    background: linear-gradient(135deg, #111, #4b4033);
-    color: #fff;
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.2), rgba(179, 36, 255, 0.2));
+    color: var(--accent);
     font-weight: 700;
     letter-spacing: 0.06em;
-    box-shadow: var(--shadow);
+    box-shadow: var(--glow), inset 0 0 20px rgba(0, 217, 255, 0.1);
+    border: 1px solid rgba(0, 217, 255, 0.3);
 }
 
 .site-nav {
@@ -95,7 +116,9 @@ a {
 .cta-link:hover,
 .product-card a:hover,
 .request-form button:hover {
-    opacity: 0.82;
+    color: var(--accent);
+    opacity: 1;
+    transition: all 0.3s ease;
 }
 
 .cta-link,
@@ -106,11 +129,20 @@ a {
     justify-content: center;
     border-radius: 999px;
     padding: 0.85rem 1.2rem;
-    background: var(--accent);
-    color: #fff;
+    background: linear-gradient(135deg, var(--accent), var(--accent-alt));
+    color: #000;
     font-weight: 700;
-    border: 0;
+    border: 1px solid var(--accent);
     cursor: pointer;
+    box-shadow: var(--glow);
+    transition: all 0.3s ease;
+}
+
+.cta-link:hover,
+.product-card a:hover,
+.request-form button:hover {
+    box-shadow: var(--glow), 0 0 40px rgba(0, 217, 255, 0.5);
+    transform: translateY(-2px);
 }
 
 main {
@@ -130,7 +162,8 @@ main {
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: #8b6f4d;
+    color: var(--accent);
+    text-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
 }
 
 .hero h1,
@@ -157,11 +190,14 @@ main {
 }
 
 .catalog-block {
-    background: rgba(255, 255, 255, 0.72);
-    border: 1px solid rgba(231, 223, 210, 0.95);
+    background: rgba(17, 21, 43, 0.5);
+    border: 1px solid rgba(0, 217, 255, 0.15);
     border-radius: 1.5rem;
     padding: 1.5rem;
-    box-shadow: var(--shadow);
+    box-shadow: 
+        0 0 30px rgba(0, 217, 255, 0.05),
+        inset 0 0 30px rgba(0, 217, 255, 0.02);
+    backdrop-filter: blur(10px);
 }
 
 .catalog-heading {
@@ -187,14 +223,25 @@ main {
 }
 
 .product-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
+    background: rgba(15, 20, 38, 0.6);
+    border: 1px solid rgba(0, 217, 255, 0.2);
     border-radius: 1.25rem;
     padding: 1.1rem;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
     min-height: 16rem;
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.05);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    border-color: rgba(0, 217, 255, 0.4);
+    box-shadow: 
+        0 0 20px rgba(0, 217, 255, 0.15),
+        inset 0 0 20px rgba(0, 217, 255, 0.05);
+    transform: translateY(-4px);
 }
 
 .product-topline {
@@ -209,11 +256,14 @@ main {
     padding: 0.4rem 0.65rem;
     border-radius: 999px;
     font-weight: 700;
+    font-size: 0.75rem;
 }
 
 .badge.available {
-    background: #e8f4e8;
-    color: #20603a;
+    background: rgba(0, 217, 255, 0.1);
+    color: var(--accent);
+    border: 1px solid rgba(0, 217, 255, 0.3);
+    text-shadow: 0 0 5px rgba(0, 217, 255, 0.3);
 }
 
 .category {
@@ -248,9 +298,10 @@ main {
 
 .product-card a {
     width: 100%;
-    background: var(--accent-soft);
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.15), rgba(179, 36, 255, 0.1));
     color: var(--accent);
-    border: 1px solid var(--border);
+    border: 1px solid rgba(0, 217, 255, 0.3);
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.1);
 }
 
 .request-block {
@@ -267,12 +318,22 @@ main {
 .request-form input,
 .request-form textarea {
     width: 100%;
-    border: 1px solid var(--border);
+    border: 1px solid rgba(0, 217, 255, 0.2);
     border-radius: 0.95rem;
     padding: 0.95rem 1rem;
     font: inherit;
-    background: #fff;
+    background: rgba(15, 20, 38, 0.6);
     color: var(--text);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.request-form input:focus,
+.request-form textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.2);
+    background: rgba(15, 20, 38, 0.8);
 }
 
 .request-form textarea {
@@ -286,7 +347,7 @@ main {
     padding: 1.35rem 0 0;
     display: grid;
     gap: 1rem;
-    border-top: 1px solid var(--border);
+    border-top: 1px solid rgba(0, 217, 255, 0.1);
     color: var(--muted);
 }
 
@@ -294,6 +355,27 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+}
+
+.contact-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(0, 217, 255, 0.1);
+}
+
+.contact-footer p {
+    margin: 0;
+}
+
+.contact-footer a {
+    color: var(--accent);
+    transition: all 0.3s ease;
+}
+
+.contact-footer a:hover {
+    text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
 }
 
 @media (max-width: 1024px) {
