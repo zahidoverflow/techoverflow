@@ -15,11 +15,11 @@ This project is designed as a lean, high-clarity sales website that helps turn p
 
 Techoverflow showcases digital products and services across high-demand categories:
 
-- AI tools (for productivity and automation)
-- Career and professional subscriptions
-- Business and collaboration software
-- Education and skill development platforms
-- Developer tools and cloud products
+- AI tools (e.g., ChatGPT Plus/Business, Google AI Pro)
+- Career and professional subscriptions (e.g., LinkedIn Career Premium)
+- Business and collaboration software (e.g., Microsoft 365, Canva Business)
+- Education and skill development platforms (e.g., Coursera, Udemy Premium, Skillshare)
+- Developer tools and cloud products (e.g., GitHub Copilot, Vercel Pro, Railway Hobby)
 
 The current catalog is managed on the product pages and can be updated quickly without any build process.
 
@@ -92,7 +92,7 @@ Deploy directly from the repository root to any static hosting platform:
 
 1. Create a feature branch.
 2. Make focused, minimal changes.
-3. Verify pages render correctly in browser.
+3. Verify pages render correctly in a browser.
 4. Open a pull request with a clear summary.
 
 ## License
