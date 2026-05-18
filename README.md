@@ -15,7 +15,7 @@ This project is designed as a lean, high-clarity sales website that helps turn p
 
 Techoverflow showcases digital products and services across high-demand categories:
 
-- AI tools (e.g., ChatGPT Plus/Business, Google AI Pro)
+- AI tools (e.g., ChatGPT Plus/Business, Google AI offerings)
 - Career and professional subscriptions (e.g., LinkedIn Career Premium)
 - Business and collaboration software (e.g., Microsoft 365, Canva Business)
 - Education and skill development platforms (e.g., Coursera, Udemy Premium, Skillshare)
@@ -27,9 +27,9 @@ The current catalog is managed on the product pages and can be updated quickly w
 
 The website includes:
 
-- **Landing page (`index.html`)** for value proposition, featured offers, and trust content
-- **Products page (`products.html`)** for full catalog browsing and direct purchase links
-- **Contact page (`contact.html`)** for support, FAQ, and inquiry handoff
+- **Landing page (`index.html`)** for presenting value proposition, featured offers, and trust content
+- **Products page (`products.html`)** for browsing the full catalog and accessing direct purchase links
+- **Contact page (`contact.html`)** for handling support, FAQ, and inquiry handoff
 - **Unified UI (`style.css`, `script.js`)** for consistent branding and interaction
 
 ## Technology Stack
