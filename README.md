@@ -19,7 +19,7 @@ Techoverflow showcases digital products and services across high-demand categori
 - Career and professional subscriptions (e.g., LinkedIn Career Premium)
 - Business and collaboration software (e.g., Microsoft 365, Canva Business)
 - Education and skill development platforms (e.g., Coursera, Udemy Premium, Skillshare)
-- Developer tools and cloud products (e.g., GitHub Copilot, Vercel Pro, Railway Hobby)
+- Developer tools and cloud products (e.g., GitHub Copilot, Vercel Pro, Railway)
 
 The current catalog is managed on the product pages and can be updated quickly without any build process.
 
