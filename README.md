@@ -1,6 +1,6 @@
 # Techoverflow
 
-Techoverflow is a conversion-focused digital storefront for selling premium software subscriptions and service access through WhatsApp with fast response and instant delivery.
+Techoverflow is a conversion-focused digital storefront for selling premium software subscriptions and service access. It uses WhatsApp for fast response and instant delivery.
 
 ## Business Positioning
 
