@@ -27,9 +27,11 @@ Techoverflow is a lightweight, no-build website designed for speed and simple de
 │   └── images/         # Social share and other image assets
 ├── contact.html        # Contact and FAQ page
 ├── index.html          # Landing page
+├── privacy.html        # Privacy Policy (Google Developer Console & GDPR compliance)
 ├── products.html       # Full product catalog
 ├── script.js           # Client-side interaction logic
 ├── style.css           # Global styles
+├── terms.html          # Terms of Service
 └── README.md
 ```
 
