@@ -22,10 +22,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="top">
     <header class="site-header">
         <div class="brand">
-            <strong>Techoverflow</strong>
+            <a href="/" style="display: flex; align-items: center; text-decoration: none;">
+                <strong>Techoverflow</strong>
+            </a>
         </div>
         <nav class="site-nav" aria-label="Primary">
             <a href="/">Home</a>
@@ -40,13 +42,46 @@
     <main>
         <div class="legal-section">
             <header class="legal-header">
+                <div class="legal-badge">
+                    <span class="badge-dot"></span>
+                    <span>Verified Compliance &bull; Google Developer Standard</span>
+                </div>
                 <h1>Privacy Policy</h1>
                 <p>How Techoverflow collects, uses, protects, and manages your personal information across our website, digital subscription services, and Google Home developer integrations.</p>
                 <div class="legal-meta">
-                    <span>Effective Date: October 19, 2026</span>
+                    <span>Effective: October 19, 2026</span>
+                    <span>&bull;</span>
+                    <span>Version 2.0</span>
+                    <span>&bull;</span>
+                    <span>Official: info@techoverflow.tech</span>
                 </div>
             </header>
 
+            <!-- Executive Summary / Highlights -->
+            <section class="privacy-highlights" aria-label="Privacy at a Glance">
+                <div class="highlight-card">
+                    <div class="highlight-icon">🔒</div>
+                    <h3>Zero Data Selling</h3>
+                    <p>We never sell, rent, broker, or monetize your personal information to third parties.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">⚡</div>
+                    <h3>Data Minimization</h3>
+                    <p>Only essential tokens and state attributes needed for service delivery and Google Home sync.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🛡️</div>
+                    <h3>Google API Verified</h3>
+                    <p>Compliant with Google API Services User Data Policy and Google Home Developer Policies.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🔄</div>
+                    <h3>Full User Control</h3>
+                    <p>1-tap Google Home unlinking &amp; 30-day verified permanent data deletion upon request.</p>
+                </div>
+            </section>
+
+            <!-- Interactive Quick Navigation -->
             <nav class="legal-toc" aria-label="Table of contents">
                 <h2>Table of Contents</h2>
                 <ol>
@@ -65,19 +100,19 @@
             </nav>
 
             <article id="section-1" class="legal-card">
-                <h2>1. Overview &amp; Scope</h2>
+                <h2><span class="section-tag">01</span> Overview &amp; Scope</h2>
                 <p>Welcome to <strong>Techoverflow</strong> ("we," "us," or "our"), accessible at <a href="https://techoverflow.tech">https://techoverflow.tech</a>. Techoverflow provides digital subscription offerings, developer tools guidance, and smart home cloud-to-cloud integrations.</p>
                 <p>This Privacy Policy describes our practices regarding the collection, use, retention, and disclosure of information when you access our website, interact with us via WhatsApp or email, or connect your account through Google Assistant, Google Home, or related Google developer actions.</p>
                 <p>By accessing our website or utilizing any of our integrations, you acknowledge that you have read and understood the practices detailed in this policy.</p>
             </article>
 
             <article id="section-2" class="legal-card">
-                <h2>2. Information We Collect</h2>
+                <h2><span class="section-tag">02</span> Information We Collect</h2>
                 <p>We believe in data minimization. We only collect the minimum amount of information necessary to fulfill your orders, provide customer support, and operate connected integrations.</p>
 
                 <h3>A. Information You Provide to Us Directly</h3>
                 <ul>
-                    <li><strong>Contact Information:</strong> Your name, email address (<a href="mailto:zahid@techoverflow.tech">zahid@techoverflow.tech</a>), phone number, and WhatsApp phone number/handle when you submit a request form or communicate with us.</li>
+                    <li><strong>Contact Information:</strong> Your name, email address (<a href="mailto:info@techoverflow.tech">info@techoverflow.tech</a>), phone number, and WhatsApp phone number/handle when you submit a request form or communicate with us.</li>
                     <li><strong>Order &amp; Service Inquiries:</strong> Details regarding the digital subscription, license, or guidance package you request.</li>
                     <li><strong>Customer Support Correspondence:</strong> Feedback, questions, and notes provided during chat or email discussions.</li>
                 </ul>
@@ -98,7 +133,7 @@
             </article>
 
             <article id="section-3" class="legal-card">
-                <h2>3. How We Use Your Information</h2>
+                <h2><span class="section-tag">03</span> How We Use Your Information</h2>
                 <p>We use the collected information strictly for legitimate business and operational purposes, including:</p>
                 <ul>
                     <li><strong>Fulfilling Orders &amp; Services:</strong> Processing subscription requests, confirming orders, and coordinating delivery via WhatsApp and email.</li>
@@ -110,7 +145,7 @@
             </article>
 
             <article id="section-4" class="legal-card">
-                <h2>4. Google Home &amp; Cloud Integrations (Google API Compliance)</h2>
+                <h2><span class="section-tag">04</span> Google Home &amp; Cloud Integrations (Google API Compliance)</h2>
                 <div class="legal-callout">
                     <p><strong>Google API &amp; User Data Policy Compliance:</strong> Techoverflow's use and transfer of information received from Google APIs, Google Home Developer Console, and Actions on Google to any other application will adhere to the <strong>Google API Services User Data Policy</strong>, including the <strong>Limited Use</strong> requirements, and the <strong>Google Home Developer Policies</strong>.</p>
                 </div>
@@ -124,7 +159,7 @@
             </article>
 
             <article id="section-5" class="legal-card">
-                <h2>5. Data Sharing &amp; Third-Party Services</h2>
+                <h2><span class="section-tag">05</span> Data Sharing &amp; Third Parties</h2>
                 <p>We do not sell, rent, monetize, or trade your personal data to data brokers, advertisers, or third parties under any circumstances. We share information only with trusted service partners strictly for the operation of our platform:</p>
                 <ul>
                     <li><strong>Google Cloud &amp; Google Home Platform:</strong> To exchange device telemetry, execute voice/app commands, and maintain Home Graph synchronization for linked accounts.</li>
@@ -135,7 +170,7 @@
             </article>
 
             <article id="section-6" class="legal-card">
-                <h2>6. Data Security &amp; Storage</h2>
+                <h2><span class="section-tag">06</span> Data Security &amp; Storage</h2>
                 <p>We implement robust technical and organizational security measures to protect your personal information against unauthorized access, loss, alteration, or disclosure:</p>
                 <ul>
                     <li>All communications with our website are encrypted in transit using <strong>Transport Layer Security (TLS/HTTPS)</strong>.</li>
@@ -146,32 +181,64 @@
             </article>
 
             <article id="section-7" class="legal-card">
-                <h2>7. Account Unlinking &amp; Data Deletion Instructions</h2>
+                <h2><span class="section-tag">07</span> Account Unlinking &amp; Data Deletion Instructions</h2>
                 <p>We give you complete control over your connected accounts and personal information. You can disconnect your integrations or request complete deletion of your data at any time.</p>
 
+                <h3>How to Unlink Techoverflow from Google Home</h3>
+                <p>You can disconnect Techoverflow from your Google Account at any time through the official Google Home app:</p>
+
+                <!-- Step-by-Step Visual Flow -->
+                <div class="steps-flow">
+                    <div class="flow-step">
+                        <span class="flow-num">1</span>
+                        <div>
+                            <strong>Open App</strong>
+                            <p>Open Google Home on Android or iOS</p>
+                        </div>
+                    </div>
+                    <div class="flow-step">
+                        <span class="flow-num">2</span>
+                        <div>
+                            <strong>Settings</strong>
+                            <p>Tap Settings &gt; Works with Google</p>
+                        </div>
+                    </div>
+                    <div class="flow-step">
+                        <span class="flow-num">3</span>
+                        <div>
+                            <strong>Select</strong>
+                            <p>Locate Techoverflow in Linked services</p>
+                        </div>
+                    </div>
+                    <div class="flow-step">
+                        <span class="flow-num">4</span>
+                        <div>
+                            <strong>Unlink</strong>
+                            <p>Tap Unlink Account &amp; confirm</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="legal-callout">
-                    <p><strong>How to Unlink Techoverflow from Google Home:</strong><br>
-                    You can disconnect Techoverflow from your Google Account at any time through the official Google Home app:<br>
-                    1. Open the <strong>Google Home</strong> app on your Android or iOS device.<br>
-                    2. Tap <strong>Settings</strong> (gear icon) &gt; <strong>Works with Google</strong>.<br>
-                    3. Under <strong>Linked services</strong>, locate and tap <strong>Techoverflow</strong>.<br>
-                    4. Tap <strong>Unlink account</strong> and confirm your choice.<br>
-                    Upon unlinking, Google immediately revokes our access token and stops sending device status or command updates to our integration.
-                    </p>
+                    <p>Upon unlinking, Google immediately revokes our access token and stops transmitting device states, telemetry, or commands to our integration servers.</p>
                 </div>
 
                 <h3>Requesting Permanent Data Deletion</h3>
                 <p>If you wish to permanently delete your contact records, order history, or integration logs from our systems, follow these simple steps:</p>
                 <ul>
-                    <li>Send an email to <strong><a href="mailto:zahid@techoverflow.tech?subject=Data%20Deletion%20Request">zahid@techoverflow.tech</a></strong> with the subject line <code>Data Deletion Request</code>.</li>
+                    <li>Send an email to <strong><a href="mailto:info@techoverflow.tech?subject=Data%20Deletion%20Request">info@techoverflow.tech</a></strong> with the subject line <code>Data Deletion Request</code>.</li>
                     <li>Include your name, the WhatsApp number or email address used when contacting us, and any Google Home user identifier (if applicable).</li>
                     <li>Alternatively, submit your request via our <a href="/contact">Contact Form</a>.</li>
                 </ul>
                 <p>Upon verification, we will permanently purge your personal information from our active databases and servers within <strong>30 calendar days</strong>, subject only to records required for statutory tax or legal compliance.</p>
+
+                <a href="mailto:info@techoverflow.tech?subject=Data%20Deletion%20Request&amp;body=Hello%20Techoverflow%20Privacy%20Team%2C%0A%0AI%20am%20requesting%20the%20permanent%20deletion%20of%20all%20personal%20data%20associated%20with%20my%20account.%0A%0AFull%20Name%3A%20%0AEmail%20%2F%20Phone%3A%20%0AGoogle%20Home%20User%20ID%20(if%20applicable)%3A%20%0A%0AThank%20you." class="btn btn-primary" style="margin-top: 0.5rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <span>✉️</span> Submit Deletion Request via Email
+                </a>
             </article>
 
             <article id="section-8" class="legal-card">
-                <h2>8. Your Rights &amp; Choices</h2>
+                <h2><span class="section-tag">08</span> Your Rights &amp; Choices</h2>
                 <p>Depending on your jurisdiction (such as under the European Union General Data Protection Regulation (GDPR) or the California Consumer Privacy Act (CCPA/CPRA)), you may have the following statutory rights:</p>
                 <ul>
                     <li><strong>Right to Access:</strong> Request a copy of the personal data we hold about you.</li>
@@ -181,23 +248,23 @@
                     <li><strong>Right to Data Portability:</strong> Request that your data be transferred to you or another service provider in a structured, machine-readable format.</li>
                     <li><strong>Right to Withdraw Consent:</strong> Withdraw your consent at any time where processing is based on consent.</li>
                 </ul>
-                <p>To exercise any of these rights, please contact us at <a href="mailto:zahid@techoverflow.tech">zahid@techoverflow.tech</a>. We will respond promptly within the timeframe required by applicable law.</p>
+                <p>To exercise any of these rights, please contact us at <a href="mailto:info@techoverflow.tech">info@techoverflow.tech</a>. We will respond promptly within the timeframe required by applicable law.</p>
             </article>
 
             <article id="section-9" class="legal-card">
-                <h2>9. Children's Privacy</h2>
+                <h2><span class="section-tag">09</span> Children's Privacy</h2>
                 <p>Our website, digital subscription services, and developer integrations are not designed for or directed to children under the age of 13 (or under 16 in the European Economic Area). We do not knowingly collect or solicit personal information from children.</p>
-                <p>If you believe that a child has provided us with personal information without parental consent, please contact us immediately at <a href="mailto:zahid@techoverflow.tech">zahid@techoverflow.tech</a> so we can promptly delete the data.</p>
+                <p>If you believe that a child has provided us with personal information without parental consent, please contact us immediately at <a href="mailto:info@techoverflow.tech">info@techoverflow.tech</a> so we can promptly delete the data.</p>
             </article>
 
             <article id="section-10" class="legal-card">
-                <h2>10. Changes to This Privacy Policy</h2>
+                <h2><span class="section-tag">10</span> Changes to This Privacy Policy</h2>
                 <p>We may update this Privacy Policy from time to time to reflect operational changes, improvements to our services, or updates to Google developer platform requirements. Any updates will be posted on this page with an updated "Effective Date."</p>
                 <p>We encourage you to periodically review this page to stay informed about how we safeguard your data.</p>
             </article>
 
             <article id="section-11" class="legal-card">
-                <h2>11. Contact Information</h2>
+                <h2><span class="section-tag">11</span> Contact Information</h2>
                 <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data handling practices, please contact our team:</p>
 
                 <div class="legal-contact-grid">
@@ -210,8 +277,8 @@
                         <a href="https://techoverflow.tech">techoverflow.tech</a>
                     </div>
                     <div class="legal-contact-item">
-                        <strong>Privacy Officer Email</strong>
-                        <a href="mailto:zahid@techoverflow.tech">zahid@techoverflow.tech</a>
+                        <strong>Official Support Email</strong>
+                        <a href="mailto:info@techoverflow.tech">info@techoverflow.tech</a>
                     </div>
                     <div class="legal-contact-item">
                         <strong>Customer Support Phone</strong>
@@ -229,6 +296,11 @@
             </article>
         </div>
     </main>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#top" class="back-to-top" aria-label="Back to top">
+        <span>↑</span> Top
+    </a>
 
     <footer class="site-footer">
         <div class="footer-content">
@@ -254,7 +326,7 @@
                 <h4>Contact</h4>
                 <ul>
                     <li><a href="https://wa.me/8801707370774" target="_blank" rel="noopener noreferrer">WhatsApp: Contact us</a></li>
-                    <li><a href="mailto:zahid@techoverflow.tech">Email: zahid@techoverflow.tech</a></li>
+                    <li><a href="mailto:info@techoverflow.tech">Email: info@techoverflow.tech</a></li>
                     <li><a href="tel:+8809638526929">Phone: +880 9638-526929</a></li>
                 </ul>
             </div>
