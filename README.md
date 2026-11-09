@@ -23,10 +23,12 @@ Techoverflow is a lightweight, no-build website designed for speed and simple de
 ```text
 .
 ├── assets/
-│   ├── icons/          # Logo, favicons, touch icon, web manifest
+│   ├── icons/          # Favicons, touch icon, web manifest, vector logo
 │   └── images/         # Social share and other image assets
 ├── contact.html        # Contact and FAQ page
+├── favicon.ico         # Root fallback favicon
 ├── index.html          # Landing page
+├── logo.png            # Master transparent brand logo
 ├── privacy.html        # Privacy Policy (Google Developer Console & GDPR compliance)
 ├── products.html       # Full product catalog
 ├── script.js           # Client-side interaction logic
