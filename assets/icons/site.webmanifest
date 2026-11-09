@@ -1,11 +1,11 @@
 {
-  "name": "Techoverflow",
+  "name": "Techoverflow (@techoverflowbd)",
   "short_name": "Techoverflow",
-  "description": "Techoverflow - Premium digital subscriptions delivered instantly via WhatsApp.",
+  "description": "Full-service digital engineering agency & premium subscription marketplace.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a0e27",
-  "theme_color": "#0a0e27",
+  "background_color": "#F8FAFC",
+  "theme_color": "#F8FAFC",
   "icons": [
     {
       "src": "/assets/icons/android-chrome-192x192.png",

@@ -1,24 +1,24 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#070A1C"/>
-      <stop offset="1" stop-color="#141936"/>
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#EEF2FF"/>
     </linearGradient>
     <linearGradient id="accent" x1="120" y1="120" x2="1080" y2="510" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#00D9FF"/>
-      <stop offset="1" stop-color="#B324FF"/>
+      <stop stop-color="#4F46E5"/>
+      <stop offset="1" stop-color="#7C3AED"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <circle cx="180" cy="140" r="140" fill="#B324FF" fill-opacity="0.14"/>
-  <circle cx="1020" cy="120" r="180" fill="#00D9FF" fill-opacity="0.12"/>
-  <circle cx="1040" cy="510" r="180" fill="#B324FF" fill-opacity="0.1"/>
-  <rect x="75" y="75" width="1050" height="480" rx="36" fill="#0C112B" fill-opacity="0.7" stroke="url(#accent)" stroke-opacity="0.45" stroke-width="2"/>
-  <text x="135" y="165" fill="#00D9FF" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2">@TECHOVERFLOWBD • DIGITAL ENGINEERING AGENCY &amp; SUBSCRIPTIONS</text>
-  <text x="135" y="255" fill="#F0F4FF" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800">Techoverflow</text>
-  <text x="135" y="320" fill="#A0ABC8" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="500">Digital Agency, 3-Tier Service Packages &amp; Premium Subscriptions</text>
-  <text x="135" y="375" fill="#00D9FF" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="600">Automation • E-commerce • Web • Android Apps • Cybersecurity • Cloud &amp; AI</text>
+  <circle cx="180" cy="140" r="140" fill="#7C3AED" fill-opacity="0.08"/>
+  <circle cx="1020" cy="120" r="180" fill="#0284C7" fill-opacity="0.08"/>
+  <circle cx="1040" cy="510" r="180" fill="#4F46E5" fill-opacity="0.08"/>
+  <rect x="75" y="75" width="1050" height="480" rx="36" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+  <text x="135" y="165" fill="#4F46E5" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2">@TECHOVERFLOWBD • DIGITAL ENGINEERING AGENCY &amp; SUBSCRIPTIONS</text>
+  <text x="135" y="255" fill="#0F172A" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800">Techoverflow</text>
+  <text x="135" y="320" fill="#334155" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="600">Digital Agency, 3-Tier Service Packages &amp; Premium Subscriptions</text>
+  <text x="135" y="375" fill="#4F46E5" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="700">Automation • E-commerce • Web • Android Apps • Cybersecurity • Cloud &amp; AI</text>
   <rect x="135" y="425" width="380" height="64" rx="18" fill="url(#accent)"/>
-  <text x="175" y="466" fill="#050714" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">wa.me/zahidoverflow →</text>
-  <text x="550" y="465" fill="#9AA4C4" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="600">facebook.com/techoverflowbd</text>
+  <text x="175" y="466" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">wa.me/zahidoverflow →</text>
+  <text x="550" y="465" fill="#475569" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="600">facebook.com/techoverflowbd</text>
 </svg>

@@ -38,8 +38,8 @@ Instant WhatsApp fulfillment for verified AI, Productivity, Developer, Design, C
 ```text
 .
 ├── assets/
-│   ├── icons/          # Multi-resolution favicons, apple-touch-icon, Android icons, webmanifest, SVG logo
-│   └── images/         # Social OpenGraph preview cover (og-cover.svg)
+│   ├── icons/          # Multi-resolution favicons (favicon.ico, 16x16, 32x32, 48x48), apple-touch-icon, webmanifest, SVG logo
+│   └── images/         # Master brand emblem (logo.png) & Social OpenGraph cover (og-cover.svg)
 ├── contact/index.html  # Clean-URL mirror of contact.html
 ├── privacy/index.html  # Clean-URL mirror of privacy.html
 ├── products/index.html # Clean-URL mirror of products.html
@@ -47,14 +47,12 @@ Instant WhatsApp fulfillment for verified AI, Productivity, Developer, Design, C
 ├── terms/index.html    # Clean-URL mirror of terms.html
 ├── CNAME               # Custom domain configuration (techoverflow.tech)
 ├── contact.html        # Contact channels, custom brief form & FAQ accordion
-├── favicon.ico         # Root multi-size favicon
 ├── index.html          # Flagship agency & subscription homepage
-├── logo.png            # 1024x1024 transparent RGBA master brand emblem
 ├── privacy.html        # Privacy Policy (Google API & Developer Console compliant)
 ├── products.html       # 42+ Digital Subscriptions catalog with live search & filter
 ├── script.js           # Package add-on calculator, filters, FAQ, WhatsApp handoff
 ├── services.html       # Dedicated 6-service 3-tier Fiverr-style packages page
-├── style.css           # Global responsive design system (v3.0)
+├── style.css           # Global responsive enterprise Light Theme design system (v4.0)
 ├── terms.html          # Terms of Service
 └── README.md
 ```
