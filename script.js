@@ -2,47 +2,18 @@
     'use strict';
 
     const WHATSAPP_BASE = 'https://wa.me/zahidoverflow';
-    const STORAGE_KEY = 'techoverflow_currency';
-
-    // Default to BDT so local Bangladesh pricing is prominent while USD is shown alongside
-    let currentCurrency = 'BDT';
-    try {
-        const saved = localStorage.getItem(STORAGE_KEY);
-        if (saved === 'USD' || saved === 'BDT') {
-            currentCurrency = saved;
-        }
-    } catch (_) {
-        // Ignore storage errors in private browsing
-    }
-
-    function formatBDT(amount) {
-        return '৳' + Number(amount).toLocaleString('en-IN');
-    }
 
     function formatUSD(amount) {
         return '$' + Number(amount).toLocaleString('en-US');
     }
 
-    // 1. Update all package cards, add-ons, and product cards based on active currency & selected add-ons
+    // 1. Update all package cards and WhatsApp links based on selected add-ons (USD only)
     function updateAllPricing() {
-        // Update currency toggle buttons
-        document.querySelectorAll('[data-currency-switch]').forEach(btn => {
-            const cur = btn.getAttribute('data-currency-switch');
-            const isActive = cur === currentCurrency;
-            btn.classList.toggle('active', isActive);
-            btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-        });
-
         // Update Add-on price labels
-        document.querySelectorAll('.addon-price[data-bdt][data-usd]').forEach(el => {
-            const bdt = Number(el.getAttribute('data-bdt'));
+        document.querySelectorAll('.addon-price[data-usd]').forEach(el => {
             const usd = Number(el.getAttribute('data-usd'));
             const suffix = el.getAttribute('data-suffix') || '';
-            if (currentCurrency === 'BDT') {
-                el.textContent = `+${formatBDT(bdt)}${suffix} ($${usd})`;
-            } else {
-                el.textContent = `+${formatUSD(usd)}${suffix} (${formatBDT(bdt)})`;
-            }
+            el.textContent = `+${formatUSD(usd)}${suffix}`;
         });
 
         // Update each Service Block (Packages + Checked Add-ons + WhatsApp links)
@@ -50,15 +21,12 @@
             const serviceTitle = block.getAttribute('data-service-name') || 'Digital Service';
 
             // Calculate checked add-ons in this service block
-            let addonBdtTotal = 0;
             let addonUsdTotal = 0;
             const selectedAddons = [];
 
             block.querySelectorAll('.addon-checkbox:checked').forEach(cb => {
-                const bdt = Number(cb.getAttribute('data-bdt') || 0);
                 const usd = Number(cb.getAttribute('data-usd') || 0);
                 const name = cb.getAttribute('data-addon-name') || 'Add-on';
-                addonBdtTotal += bdt;
                 addonUsdTotal += usd;
                 selectedAddons.push(name);
             });
@@ -67,24 +35,21 @@
             block.querySelectorAll('.package-card').forEach(card => {
                 const tierName = card.getAttribute('data-tier') || 'Standard';
                 const pkgTitle = card.getAttribute('data-package-title') || tierName;
-                const baseBdt = Number(card.getAttribute('data-bdt') || 0);
                 const baseUsd = Number(card.getAttribute('data-usd') || 0);
                 const delivery = card.getAttribute('data-delivery') || '';
 
-                const totalBdt = baseBdt + addonBdtTotal;
                 const totalUsd = baseUsd + addonUsdTotal;
 
                 const primaryEl = card.querySelector('.price-primary');
                 const secondaryEl = card.querySelector('.price-secondary');
 
-                if (primaryEl && secondaryEl) {
-                    if (currentCurrency === 'BDT') {
-                        primaryEl.textContent = `${formatBDT(totalBdt)} BDT`;
-                        secondaryEl.textContent = `${formatUSD(totalUsd)} USD`;
-                    } else {
-                        primaryEl.textContent = `${formatUSD(totalUsd)} USD`;
-                        secondaryEl.textContent = `${formatBDT(totalBdt)} BDT`;
-                    }
+                if (primaryEl) {
+                    primaryEl.textContent = `${formatUSD(totalUsd)}`;
+                }
+                if (secondaryEl) {
+                    secondaryEl.textContent = selectedAddons.length > 0
+                        ? `USD (+${selectedAddons.length} Add-on${selectedAddons.length > 1 ? 's' : ''})`
+                        : 'USD';
                 }
 
                 // Update WhatsApp CTA button in this card
@@ -93,47 +58,19 @@
                     const addonText = selectedAddons.length > 0
                         ? `\n• Add-ons: ${selectedAddons.join(', ')}`
                         : '';
-                    const msg = `Hi @techoverflowbd! I want to order/inquire about:\n• Service: ${serviceTitle}\n• Package: ${tierName} (${pkgTitle})\n• Estimated Price: ${formatBDT(totalBdt)} BDT / ${formatUSD(totalUsd)} USD${delivery ? '\n• Delivery: ' + delivery : ''}${addonText}\n\nPlease share the next steps!`;
+                    const msg = `Hi @techoverflowbd! I want to order/inquire about:\n• Service: ${serviceTitle}\n• Package: ${tierName} (${pkgTitle})\n• Estimated Price: ${formatUSD(totalUsd)} USD${delivery ? '\n• Delivery: ' + delivery : ''}${addonText}\n\nPlease share the next steps!`;
                     ctaBtn.setAttribute('href', `${WHATSAPP_BASE}?text=${encodeURIComponent(msg)}`);
                 }
             });
         });
-
-        // Update Subscription Product Cards
-        document.querySelectorAll('.product-card[data-bdt][data-usd]').forEach(card => {
-            const bdt = Number(card.getAttribute('data-bdt'));
-            const usd = Number(card.getAttribute('data-usd'));
-            const priceEl = card.querySelector('.product-price');
-            if (priceEl && bdt > 0 && usd > 0) {
-                if (currentCurrency === 'BDT') {
-                    priceEl.innerHTML = `<span>${formatBDT(bdt)}</span> <span class="price-secondary">${formatUSD(usd)}</span>`;
-                } else {
-                    priceEl.innerHTML = `<span>${formatUSD(usd)}</span> <span class="price-secondary">${formatBDT(bdt)}</span>`;
-                }
-            }
-        });
     }
 
-    // 2. Currency Switcher Click Listeners
-    document.querySelectorAll('[data-currency-switch]').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const selected = btn.getAttribute('data-currency-switch');
-            if (selected === 'BDT' || selected === 'USD') {
-                currentCurrency = selected;
-                try {
-                    localStorage.setItem(STORAGE_KEY, currentCurrency);
-                } catch (_) {}
-                updateAllPricing();
-            }
-        });
-    });
-
-    // 3. Add-on Checkboxes Listeners
+    // 2. Add-on Checkboxes Listeners
     document.querySelectorAll('.addon-checkbox').forEach(cb => {
         cb.addEventListener('change', updateAllPricing);
     });
 
-    // 4. Service Category Filter Pills
+    // 3. Service Category Filter Pills
     document.querySelectorAll('[data-service-filter]').forEach(pill => {
         pill.addEventListener('click', () => {
             const target = pill.getAttribute('data-service-filter');
@@ -152,7 +89,7 @@
         });
     });
 
-    // 5. Mobile Package Tier Tabs (Basic / Standard / Premium switcher on smaller screens)
+    // 4. Mobile Package Tier Tabs (Basic / Standard / Premium switcher on smaller screens)
     document.querySelectorAll('.service-category-block').forEach(block => {
         const tabs = block.querySelectorAll('.mobile-tier-tab');
         const cards = block.querySelectorAll('.package-card');
@@ -173,7 +110,7 @@
         });
     });
 
-    // 6. Product Catalog Search & Category Filter
+    // 5. Product Catalog Search & Category Filter
     const productSearchInput = document.getElementById('product-search');
     const productFilterPills = document.querySelectorAll('[data-product-filter]');
     let activeProductCategory = 'all';
@@ -216,7 +153,7 @@
         });
     });
 
-    // 7. FAQ Accordion
+    // 6. FAQ Accordion
     document.querySelectorAll('.faq-question').forEach(btn => {
         btn.addEventListener('click', () => {
             const item = btn.closest('.faq-item');
@@ -226,7 +163,7 @@
         });
     });
 
-    // 8. Mobile Navigation Drawer Toggle & Active Bottom Nav State
+    // 7. Mobile Navigation Drawer Toggle & Active Bottom Nav State
     const menuToggle = document.querySelector('.mobile-menu-toggle');
     const siteNav = document.querySelector('.site-nav');
     if (menuToggle && siteNav) {
@@ -256,7 +193,7 @@
         }
     });
 
-    // 9. Request / Inquiry Form Submission -> WhatsApp (@techoverflowbd / wa.me/zahidoverflow)
+    // 8. Request / Inquiry Form Submission -> WhatsApp (@techoverflowbd / wa.me/zahidoverflow)
     document.querySelectorAll('.request-form').forEach(form => {
         form.addEventListener('submit', event => {
             event.preventDefault();
@@ -271,7 +208,7 @@
                 `• Interested in: ${service}`
             ];
             if (pkg) lines.push(`• Package Tier: ${pkg}`);
-            if (market) lines.push(`• Market / Currency: ${market}`);
+            if (market) lines.push(`• Region: ${market}`);
             if (notes) lines.push(`• Project Details: ${notes}`);
 
             const whatsappUrl = `${WHATSAPP_BASE}?text=${encodeURIComponent(lines.join('\n'))}`;

@@ -1,6 +1,6 @@
 # Techoverflow (`@techoverflowbd`)
 
-Full-service Digital Engineering Agency & Premium Subscription Platform serving **Bangladeshi (BDT ৳)** and **International (USD $)** clients.
+Full-service Digital Engineering Agency & Premium Subscription Platform serving **Bangladeshi** and **International** clients with transparent **USD ($)** pricing.
 
 - **Live Website:** [https://techoverflow.tech](https://techoverflow.tech)
 - **Official Brand Handle:** `@techoverflowbd`
@@ -13,7 +13,7 @@ Full-service Digital Engineering Agency & Premium Subscription Platform serving 
 ## Core Capabilities
 
 ### 1. Digital Agency Services (Fiverr-Style 3-Tier Packages)
-Every core practice is structured into **Basic**, **Standard (Most Popular)**, and **Premium** tiers with transparent deliverables, delivery timeframes, revision counts, dual-currency pricing (**BDT ৳** & **USD $**), and interactive add-on calculators:
+Every core practice is structured into **Basic**, **Standard (Most Popular)**, and **Premium** tiers with transparent deliverables, delivery timeframes, revision counts, **USD ($)** pricing, and interactive add-on calculators:
 
 1. **Business Automation & AI Agents:** Facebook, WhatsApp & Instagram automation, Bangla/Banglish/English AI sales agents, n8n/Make workflows, and CRM lead pipelines.
 2. **E-commerce Development:** Shopify, WooCommerce, and custom Next.js storefronts with bKash, Nagad, SSLCommerz, Stripe, PayPal, and Pathao/Steadfast/RedX/DHL courier APIs.
@@ -30,7 +30,7 @@ Instant WhatsApp fulfillment for verified AI, Productivity, Developer, Design, C
 ## Tech Stack & Architecture
 
 - **100% Static & GitHub Pages Compatible:** Pure semantic HTML5, modern responsive CSS3 (`style.css`), and zero-dependency Vanilla JavaScript (`script.js`).
-- **Dual-Market Currency Engine:** Instant client-side `BDT (৳)` ⇄ `USD ($)` switching persisted via `localStorage`, plus real-time package + add-on quote calculation.
+- **Interactive Quote Engine:** Real-time USD (`$`) package + add-on quote calculation with one-click WhatsApp brief handoff.
 - **Clean-URL Routing:** Root HTML pages (`services.html`, `products.html`, `contact.html`, `privacy.html`, `terms.html`) are mirrored in their respective subdirectories (`services/index.html`, etc.) to ensure zero redirect loops on GitHub Pages.
 
 ## Project Structure
@@ -51,8 +51,8 @@ Instant WhatsApp fulfillment for verified AI, Productivity, Developer, Design, C
 ├── index.html          # Flagship agency & subscription homepage
 ├── logo.png            # 1024x1024 transparent RGBA master brand emblem
 ├── privacy.html        # Privacy Policy (Google API & Developer Console compliant)
-├── products.html       # 39+ Digital Subscriptions catalog with live search & filter
-├── script.js           # Currency switcher, package add-on calculator, filters, FAQ, WhatsApp handoff
+├── products.html       # 42+ Digital Subscriptions catalog with live search & filter
+├── script.js           # Package add-on calculator, filters, FAQ, WhatsApp handoff
 ├── services.html       # Dedicated 6-service 3-tier Fiverr-style packages page
 ├── style.css           # Global responsive design system (v3.0)
 ├── terms.html          # Terms of Service
