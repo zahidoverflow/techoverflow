@@ -1,85 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact TechOverflow — request subscriptions via WhatsApp.">
-    <title>Contact — Techoverflow</title>
+    <meta name="description" content="Contact Techoverflow (@techoverflowbd) — Request a service package quote, custom software build, cybersecurity audit, or digital subscription via WhatsApp.">
+    <title>Contact &amp; FAQ — Techoverflow (@techoverflowbd)</title>
     <link rel="canonical" href="https://techoverflow.tech/contact">
-    <meta property="og:title" content="Contact — Techoverflow">
-    <meta property="og:description" content="Request premium subscriptions and contact TechOverflow.">
+    <meta property="og:title" content="Contact &amp; FAQ — Techoverflow (@techoverflowbd)">
+    <meta property="og:description" content="Request agency service packages, custom software quotes, or digital subscriptions directly via WhatsApp (@zahidoverflow).">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://techoverflow.tech/contact">
     <meta property="og:image" content="https://techoverflow.tech/assets/images/og-cover.svg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="theme-color" content="#0a0e27">
+    <meta name="theme-color" content="#070a1c">
     <link rel="icon" type="image/svg+xml" href="/assets/icons/logo.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
     <link rel="manifest" href="/assets/icons/site.webmanifest">
-    <link rel="stylesheet" href="/style.css?v=2.2">
+    <link rel="stylesheet" href="/style.css?v=3.2">
 </head>
+
 <body>
+    <!-- Top Identity & Quick Contact Bar -->
+    <div class="top-bar">
+        <div class="top-bar__inner">
+            <div class="top-bar__badge">
+                <span class="status-dot"></span>
+                <span><strong>@techoverflowbd</strong> &mdash; 24/7 Direct WhatsApp &amp; Engineering Consultation</span>
+            </div>
+            <div class="top-bar__links">
+                <a href="https://facebook.com/techoverflowbd" target="_blank" rel="noopener noreferrer">Facebook: @techoverflowbd</a>
+                <a href="https://wa.me/zahidoverflow" target="_blank" rel="noopener noreferrer">WhatsApp: wa.me/zahidoverflow</a>
+                <a href="mailto:info@techoverflow.tech">info@techoverflow.tech</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Sticky Header -->
     <header class="site-header">
-        <a href="/" class="brand" aria-label="Techoverflow Home">
-            <img src="/logo.png" alt="Techoverflow Logo" class="brand-logo" width="40" height="40">
-            <strong>Techoverflow</strong>
-        </a>
-        <nav class="site-nav" aria-label="Primary">
-            <a href="/">Home</a>
-            <a href="/products">Products</a>
-            <a href="/contact">FAQ</a>
-            <a href="/contact">Contact</a>
-        </nav>
-        <a href="https://wa.me/8801707370774?text=Hi!%20I%27m%20interested%20in%20Techoverflow%20products" target="_blank" rel="noopener noreferrer" class="btn-header">Buy on WhatsApp</a>
+        <div class="header-inner">
+            <a href="/" class="brand" aria-label="Techoverflow Home">
+                <img src="/logo.png" alt="Techoverflow Logo" class="brand-logo" width="40" height="40">
+                <div class="brand-text">
+                    <strong>Techoverflow</strong>
+                    <span class="brand-handle">@techoverflowbd</span>
+                </div>
+            </a>
+
+            <nav class="site-nav" aria-label="Primary">
+                <a href="/">Home</a>
+                <a href="/services">Services &amp; Packages</a>
+                <a href="/products">Subscriptions</a>
+                <a href="#faq">FAQ</a>
+                <a href="/contact" class="active">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="currency-switcher" role="group" aria-label="Select Currency">
+                    <button type="button" class="currency-btn active" data-currency-switch="BDT" aria-pressed="true">🇧🇩 BDT (৳)</button>
+                    <button type="button" class="currency-btn" data-currency-switch="USD" aria-pressed="false">🌐 USD ($)</button>
+                </div>
+                <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27d%20like%20to%20get%20in%20touch."
+                    target="_blank" rel="noopener noreferrer" class="btn-header">Chat on WhatsApp</a>
+                <button type="button" class="mobile-menu-toggle" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+            </div>
+        </div>
     </header>
 
     <main>
         <section class="hero">
-            <h1>Contact / Request a subscription</h1>
-            <p class="hero-copy">Tell us what you need and we'll get back to you via WhatsApp.</p>
+            <div class="hero-badge">
+                <span>💬 DIRECT RESPONSE &bull; @TECHOVERFLOWBD</span>
+            </div>
+            <h1>Contact Us / <span class="text-gradient">Request a Quote</span></h1>
+            <p class="hero-copy">Whether you are in Bangladesh (BDT ৳) or anywhere in the world (USD $), send us your project brief or subscription request and connect directly with our engineering team on WhatsApp.</p>
         </section>
 
         <section class="catalog">
             <article class="catalog-block request-block">
                 <div class="catalog-heading compact">
-                    <p class="eyebrow">Request a subscription</p>
+                    <p class="eyebrow">Request a Service Package or Subscription</p>
                     <h2>Send your request</h2>
                 </div>
-                <p>Fill the form and we'll open a WhatsApp conversation with your details.</p>
+                <p>Fill out the form below and we will open a direct WhatsApp conversation with your structured details.</p>
                 <form id="request" class="request-form">
-                    <label class="sr-only" for="req-name">Your Name</label>
-                    <input id="req-name" type="text" name="name" placeholder="Your Name" aria-label="Your Name" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="req-name">Your Name / Company *</label>
+                            <input id="req-name" type="text" name="name" placeholder="Your Name or Company" aria-label="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="req-market">Market / Currency</label>
+                            <select id="req-market" name="market">
+                                <option value="Bangladesh (BDT ৳)">🇧🇩 Bangladesh (BDT ৳)</option>
+                                <option value="International (USD $)">🌐 International (USD $)</option>
+                            </select>
+                        </div>
+                    </div>
 
-                    <label class="sr-only" for="req-service">Requested Service</label>
-                    <input id="req-service" type="text" name="service" placeholder="Requested Service" aria-label="Requested Service" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="req-service">Requested Service or Subscription *</label>
+                            <select id="req-service" name="service" required>
+                                <option value="Business Automation & AI Agents">1. Business Automation &amp; AI Agents</option>
+                                <option value="E-commerce Development">2. E-commerce Development</option>
+                                <option value="Website Development">3. Website Development</option>
+                                <option value="Android App Development">4. Android App Development</option>
+                                <option value="Cybersecurity Services (VAPT)">5. Cybersecurity Services (VAPT)</option>
+                                <option value="UI/UX Design, Cloud & AI Solutions">6. UI/UX Design, Cloud &amp; AI Solutions</option>
+                                <option value="Premium Digital Subscription">7. Premium Digital Subscription</option>
+                                <option value="Custom Multi-Service Project">8. Custom Multi-Service Project</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="req-package">Preferred Package Tier</label>
+                            <select id="req-package" name="package">
+                                <option value="Standard Tier (Recommended)">Standard Tier (Recommended ★)</option>
+                                <option value="Basic Tier (Starter)">Basic Tier (Starter)</option>
+                                <option value="Premium Tier (Full Scale)">Premium Tier (Full Scale)</option>
+                                <option value="Custom Scope / Not Sure">Custom Scope / Need Advice</option>
+                            </select>
+                        </div>
+                    </div>
 
-                    <label class="sr-only" for="req-notes">Additional Notes</label>
-                    <textarea id="req-notes" name="notes" placeholder="Additional Notes" aria-label="Additional Notes"></textarea>
+                    <div class="form-group">
+                        <label class="form-label" for="req-notes">Additional Notes / Project Scope</label>
+                        <textarea id="req-notes" name="notes" placeholder="Describe your business requirements, timeline, or desired subscription plan..." aria-label="Additional Notes"></textarea>
+                    </div>
 
-                    <button type="submit">Send Request via WhatsApp</button>
+                    <button type="submit">Send Request via WhatsApp (@zahidoverflow) →</button>
                 </form>
             </article>
 
             <article class="catalog-block">
                 <div class="catalog-heading compact">
-                    <p class="eyebrow">Other ways to reach us</p>
-                    <h2>Contact details</h2>
+                    <p class="eyebrow">Official Contact Channels</p>
+                    <h2>Reach @techoverflowbd Directly</h2>
                 </div>
+                <p>Prefer to message or call us directly? Use any of our verified official channels below.</p>
                 <div class="contact-footer">
-                    <p><strong>Phone</strong></p>
-                    <p><a href="tel:+8809638526929">+880 9638-526929</a></p>
-                    <p><strong>Email</strong></p>
-                    <p><a href="mailto:info@techoverflow.tech">info@techoverflow.tech</a></p>
-                    <p><strong>WhatsApp</strong></p>
-                    <p><a href="https://wa.me/8801707370774" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a></p>
+                    <div class="contact-channel-card">
+                        <span class="channel-icon">💬</span>
+                        <div class="channel-details">
+                            <strong>Direct WhatsApp (Fastest Response)</strong>
+                            <a href="https://wa.me/zahidoverflow" target="_blank" rel="noopener noreferrer">https://wa.me/zahidoverflow</a>
+                        </div>
+                    </div>
+                    <div class="contact-channel-card">
+                        <span class="channel-icon">📘</span>
+                        <div class="channel-details">
+                            <strong>Official Facebook Page</strong>
+                            <a href="https://facebook.com/techoverflowbd" target="_blank" rel="noopener noreferrer">https://facebook.com/techoverflowbd (@techoverflowbd)</a>
+                        </div>
+                    </div>
+                    <div class="contact-channel-card">
+                        <span class="channel-icon">✉️</span>
+                        <div class="channel-details">
+                            <strong>Official Support &amp; Business Email</strong>
+                            <a href="mailto:info@techoverflow.tech">info@techoverflow.tech</a>
+                        </div>
+                    </div>
+                    <div class="contact-channel-card">
+                        <span class="channel-icon">📞</span>
+                        <div class="channel-details">
+                            <strong>Customer Helpline</strong>
+                            <a href="tel:+8809638526929">+880 9638-526929</a>
+                        </div>
+                    </div>
                 </div>
             </article>
         </section>
+
+        <!-- Comprehensive FAQ Section -->
+        <section id="faq" class="faq-section">
+            <div class="section-header">
+                <span class="section-eyebrow">Frequently Asked Questions</span>
+                <h2>Answers to Common Questions</h2>
+                <p>Learn how our 3-tier service packages, BDT/USD billing, timelines, and digital subscriptions work.</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item open">
+                    <button type="button" class="faq-question" aria-expanded="true">
+                        <span>How do I order a Basic, Standard, or Premium service package?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Browse our <a href="/services">Services &amp; Packages</a> page, select your preferred tier (<strong>Basic</strong>, <strong>Standard</strong>, or <strong>Premium</strong>), check any optional add-on upgrades, and click <strong>Order on WhatsApp</strong>. Your complete package selection and pricing will be pre-filled in a chat to <a href="https://wa.me/zahidoverflow" target="_blank" rel="noopener noreferrer">wa.me/zahidoverflow</a>.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question" aria-expanded="false">
+                        <span>What payment methods do you support in Bangladesh (BDT) and Internationally (USD)?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <strong>Bangladesh (BDT ৳):</strong> bKash, Nagad, Rocket, and local bank transfers (City Bank, BRAC Bank, DBBL, BEFTN/NPSB).<br>
+                        <strong>International (USD $):</strong> Wise, Payoneer, International Wire Transfer, Debit/Credit Card payment links, and USDT/USDC.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question" aria-expanded="false">
+                        <span>What is included in your Business Automation &amp; AI Agent packages?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Our automation packages automate customer replies, comment-to-inbox DMs, lead capture, and order taking across <strong>Facebook Messenger</strong>, <strong>Instagram</strong>, and <strong>WhatsApp</strong>. Standard and Premium tiers include custom AI agents trained on your catalog (supporting Bangla, Banglish, and English) connected to Google Sheets and your CRM via n8n/Make.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question" aria-expanded="false">
+                        <span>Do you sign NDAs for Cybersecurity Penetration Testing and Custom Software projects?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes. We routinely sign mutual Non-Disclosure Agreements (NDAs) and Rules of Engagement (RoE) authorizations before starting any security audit, VAPT engagement, or proprietary software development project.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button type="button" class="faq-question" aria-expanded="false">
+                        <span>How fast are digital subscriptions activated after payment?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Subscriptions from our <a href="/products">Subscriptions Catalog</a> are typically activated and delivered within 5 to 30 minutes via WhatsApp or email once payment is confirmed. All subscriptions include full warranty support for the duration of your plan.
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- Site Footer -->
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-section">
@@ -88,25 +245,44 @@
                         <img src="/logo.png" alt="Techoverflow Logo" class="footer-brand-logo" width="44" height="44">
                         <strong>Techoverflow</strong>
                     </a>
-                    <p>Premium subscriptions delivered instantly via WhatsApp.</p>
+                    <p>Full-service digital engineering agency &amp; premium subscription marketplace serving Bangladesh (BDT) and global clients (USD).</p>
+                    <div class="social-pills">
+                        <a href="https://wa.me/zahidoverflow" target="_blank" rel="noopener noreferrer" class="social-pill">💬 WhatsApp</a>
+                        <a href="https://facebook.com/techoverflowbd" target="_blank" rel="noopener noreferrer" class="social-pill">📘 @techoverflowbd</a>
+                    </div>
                 </div>
             </div>
 
             <div class="footer-section">
-                <h4>Navigation</h4>
+                <h4>Agency Services</h4>
+                <ul>
+                    <li><a href="/services#service-automation">Business Automation &amp; AI</a></li>
+                    <li><a href="/services#service-ecommerce">E-commerce Development</a></li>
+                    <li><a href="/services#service-webdev">Website Development</a></li>
+                    <li><a href="/services#service-android">Android App Development</a></li>
+                    <li><a href="/services#service-cybersecurity">Cybersecurity &amp; VAPT</a></li>
+                    <li><a href="/services#service-solutions">UI/UX, Cloud &amp; AI Solutions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/products">Products</a></li>
-                    <li><a href="/contact">FAQ</a></li>
+                    <li><a href="/services">Service Packages</a></li>
+                    <li><a href="/products">Subscriptions Catalog</a></li>
+                    <li><a href="/contact#faq">FAQ</a></li>
+                    <li><a href="/contact">Contact &amp; Custom Quote</a></li>
                     <li><a href="/privacy">Privacy Policy</a></li>
                     <li><a href="/terms">Terms of Service</a></li>
                 </ul>
             </div>
 
             <div class="footer-section">
-                <h4>Contact</h4>
+                <h4>Official Contact</h4>
                 <ul>
-                    <li><a href="https://wa.me/8801707370774" target="_blank" rel="noopener noreferrer">WhatsApp: Contact us</a></li>
+                    <li><a href="https://wa.me/zahidoverflow" target="_blank" rel="noopener noreferrer">WhatsApp: wa.me/zahidoverflow</a></li>
+                    <li><a href="https://facebook.com/techoverflowbd" target="_blank" rel="noopener noreferrer">Facebook: @techoverflowbd</a></li>
                     <li><a href="mailto:info@techoverflow.tech">Email: info@techoverflow.tech</a></li>
                     <li><a href="tel:+8809638526929">Phone: +880 9638-526929</a></li>
                 </ul>
@@ -114,15 +290,19 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 Techoverflow. All rights reserved. &bull; <a href="/privacy">Privacy Policy</a> &bull; <a href="/terms">Terms of Service</a></p>
+            <p>&copy; 2026 Techoverflow (<strong>@techoverflowbd</strong>). All rights reserved. &bull; <a href="/privacy">Privacy Policy</a> &bull; <a href="/terms">Terms of Service</a> &bull; <a href="https://facebook.com/techoverflowbd" target="_blank" rel="noopener noreferrer">Facebook</a> &bull; <a href="https://wa.me/zahidoverflow" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
         </div>
     </footer>
+
+    <!-- Mobile Sticky Bottom Bar -->
     <nav class="mobile-nav" aria-label="Mobile quick actions">
         <a class="mobile-nav__item" href="/">Home</a>
-        <a class="mobile-nav__item" href="#request">Request</a>
-        <a class="mobile-nav__item mobile-nav__item--accent" href="https://wa.me/8801707370774" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a class="mobile-nav__item" href="/services">Services</a>
+        <a class="mobile-nav__item" href="/products">Products</a>
+        <a class="mobile-nav__item mobile-nav__item--accent" href="https://wa.me/zahidoverflow" target="_blank" rel="noopener noreferrer">WhatsApp</a>
     </nav>
 
-    <script src="script.js" defer></script>
+    <script src="/script.js?v=3.2" defer></script>
 </body>
+
 </html>

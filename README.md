@@ -1,83 +1,70 @@
-# Techoverflow
+# Techoverflow (`@techoverflowbd`)
 
-A modern static marketing website for showcasing and selling premium digital subscriptions through WhatsApp.
+Full-service Digital Engineering Agency & Premium Subscription Platform serving **Bangladeshi (BDT ৳)** and **International (USD $)** clients.
 
-## Overview
+- **Live Website:** [https://techoverflow.tech](https://techoverflow.tech)
+- **Official Brand Handle:** `@techoverflowbd`
+- **Official Facebook:** [https://facebook.com/techoverflowbd](https://facebook.com/techoverflowbd)
+- **Direct WhatsApp:** [https://wa.me/zahidoverflow](https://wa.me/zahidoverflow)
+- **Support Email:** `info@techoverflow.tech`
 
-Techoverflow is a lightweight, no-build website designed for speed and simple deployment. The site includes:
+---
 
-- A landing page with featured products and trust-focused sections
-- A dedicated products page with the full subscription catalog
-- A contact/FAQ page with a request form and WhatsApp handoff
-- Shared styling and JavaScript for consistent behavior
+## Core Capabilities
 
-## Tech Stack
+### 1. Digital Agency Services (Fiverr-Style 3-Tier Packages)
+Every core practice is structured into **Basic**, **Standard (Most Popular)**, and **Premium** tiers with transparent deliverables, delivery timeframes, revision counts, dual-currency pricing (**BDT ৳** & **USD $**), and interactive add-on calculators:
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- Static assets (SVG, PNG, web manifest)
+1. **Business Automation & AI Agents:** Facebook, WhatsApp & Instagram automation, Bangla/Banglish/English AI sales agents, n8n/Make workflows, and CRM lead pipelines.
+2. **E-commerce Development:** Shopify, WooCommerce, and custom Next.js storefronts with bKash, Nagad, SSLCommerz, Stripe, PayPal, and Pathao/Steadfast/RedX/DHL courier APIs.
+3. **Website Development:** High-converting landing pages, corporate business websites, personal portfolios, and full-stack SaaS web applications.
+4. **Android App Development:** Native Kotlin & cross-platform Flutter Android apps, Firebase/REST backends, web admin portals, and Google Play Store publishing.
+5. **Cybersecurity Services (VAPT):** Surface security audits, grey-box web & API penetration testing (OWASP Top 10), full-scope red-team VAPT, malware cleanup, and Cloudflare WAF/server hardening.
+6. **UI/UX Design, Cloud DevOps & AI Solutions:** Figma design systems, Linux VPS/Docker/AWS infrastructure, GitHub Actions CI/CD, and custom LLM/RAG integrations.
+
+### 2. Premium Digital Subscriptions (`39+` Products)
+Instant WhatsApp fulfillment for verified AI, Productivity, Developer, Design, Career, Education, and Cloud tools with interactive search and category filtering.
+
+---
+
+## Tech Stack & Architecture
+
+- **100% Static & GitHub Pages Compatible:** Pure semantic HTML5, modern responsive CSS3 (`style.css`), and zero-dependency Vanilla JavaScript (`script.js`).
+- **Dual-Market Currency Engine:** Instant client-side `BDT (৳)` ⇄ `USD ($)` switching persisted via `localStorage`, plus real-time package + add-on quote calculation.
+- **Clean-URL Routing:** Root HTML pages (`services.html`, `products.html`, `contact.html`, `privacy.html`, `terms.html`) are mirrored in their respective subdirectories (`services/index.html`, etc.) to ensure zero redirect loops on GitHub Pages.
 
 ## Project Structure
 
 ```text
 .
 ├── assets/
-│   ├── icons/          # Favicons, touch icon, web manifest, vector logo
-│   └── images/         # Social share and other image assets
-├── contact.html        # Contact and FAQ page
-├── favicon.ico         # Root fallback favicon
-├── index.html          # Landing page
-├── logo.png            # Master transparent brand logo
-├── privacy.html        # Privacy Policy (Google Developer Console & GDPR compliance)
-├── products.html       # Full product catalog
-├── script.js           # Client-side interaction logic
-├── style.css           # Global styles
+│   ├── icons/          # Multi-resolution favicons, apple-touch-icon, Android icons, webmanifest, SVG logo
+│   └── images/         # Social OpenGraph preview cover (og-cover.svg)
+├── contact/index.html  # Clean-URL mirror of contact.html
+├── privacy/index.html  # Clean-URL mirror of privacy.html
+├── products/index.html # Clean-URL mirror of products.html
+├── services/index.html # Clean-URL mirror of services.html
+├── terms/index.html    # Clean-URL mirror of terms.html
+├── CNAME               # Custom domain configuration (techoverflow.tech)
+├── contact.html        # Contact channels, custom brief form & FAQ accordion
+├── favicon.ico         # Root multi-size favicon
+├── index.html          # Flagship agency & subscription homepage
+├── logo.png            # 1024x1024 transparent RGBA master brand emblem
+├── privacy.html        # Privacy Policy (Google API & Developer Console compliant)
+├── products.html       # 39+ Digital Subscriptions catalog with live search & filter
+├── script.js           # Currency switcher, package add-on calculator, filters, FAQ, WhatsApp handoff
+├── services.html       # Dedicated 6-service 3-tier Fiverr-style packages page
+├── style.css           # Global responsive design system (v3.0)
 ├── terms.html          # Terms of Service
 └── README.md
 ```
 
-## Getting Started
-
-Because this is a static site, no dependency installation is required.
-
-1. Clone the repository.
-2. Open `index.html` in your browser.
-
 ## Local Development
 
-You can run a local static server (optional) for smoother development:
+Run any static HTTP server from the repository root:
 
-- Python: `python -m http.server 8000`
-- Node.js: `npx serve .`
+```bash
+python3 -m http.server 8000
+```
 
-Then open `http://localhost:8000`.
-
-## Deployment
-
-Deploy directly from the repository root to any static hosting provider, such as:
-
-- GitHub Pages
-- Netlify
-- Vercel (static export)
-- Cloudflare Pages
-
-## Content & Asset Guidelines
-
-- Add product and page content directly in the HTML files.
-- Keep shared visual styles in `style.css`.
-- Keep behavior updates in `script.js`.
-- Store logos/icons/favicons in `assets/icons/`.
-- Store page and preview images in `assets/images/`.
-- Optimize images before committing to keep load times fast.
-
-## Contributing
-
-1. Create a feature branch.
-2. Make focused, minimal changes.
-3. Verify pages render correctly in a browser.
-4. Open a pull request with a clear summary.
-
-## License
-
-This repository currently does not define a license. Add a `LICENSE` file if you want to specify usage terms.
+Then visit `http://localhost:8000`.

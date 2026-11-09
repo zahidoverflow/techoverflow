@@ -1,12 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=/products">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Techoverflow (@techoverflowbd) Subscriptions Catalog — Browse 39+ premium AI, Developer, Productivity, Design, Career, Education, and Cloud subscriptions delivered instantly via WhatsApp.">
+    <title>Premium Digital Subscriptions Catalog — Techoverflow (@techoverflowbd)</title>
     <link rel="canonical" href="https://techoverflow.tech/products">
-    <title>Redirecting to Products...</title>
+    <meta property="og:title" content="Premium Subscriptions Catalog — Techoverflow (@techoverflowbd)">
+    <meta property="og:description" content="Browse 39+ authentic AI, productivity, developer, and cloud subscriptions in BDT &amp; USD with instant WhatsApp delivery.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://techoverflow.tech/products">
+    <meta property="og:image" content="https://techoverflow.tech/assets/images/og-cover.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#070a1c">
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/logo.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/assets/icons/site.webmanifest">
+    <link rel="stylesheet" href="/style.css?v=3.2">
 </head>
+
 <body>
-    <p>Redirecting to <a href="/products">Products</a>...</p>
+    <!-- Top Identity & Quick Contact Bar -->
+    <div class="top-bar">
+        <div class="top-bar__inner">
+            <div class="top-bar__badge">
+                <span class="status-dot"></span>
+                <span><strong>@techoverflowbd</strong> &mdash; Instant Subscription Delivery (BDT ৳ &amp; USD $)</span>
+            </div>
+            <div class="top-bar__links">
+                <a href="https://facebook.com/techoverflowbd" target="_blank" rel="noopener noreferrer">Facebook: @techoverflowbd</a>
+                <a href="https://wa.me/zahidoverflow" target="_blank" rel="noopener noreferrer">WhatsApp: wa.me/zahidoverflow</a>
+                <a href="mailto:info@techoverflow.tech">info@techoverflow.tech</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Sticky Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="brand" aria-label="Techoverflow Home">
+                <img src="/logo.png" alt="Techoverflow Logo" class="brand-logo" width="40" height="40">
+                <div class="brand-text">
+                    <strong>Techoverflow</strong>
+                    <span class="brand-handle">@techoverflowbd</span>
+                </div>
+            </a>
+
+            <nav class="site-nav" aria-label="Primary">
+                <a href="/">Home</a>
+                <a href="/services">Services &amp; Packages</a>
+                <a href="/products" class="active">Subscriptions</a>
+                <a href="/contact#faq">FAQ</a>
+                <a href="/contact">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="currency-switcher" role="group" aria-label="Select Currency">
+                    <button type="button" class="currency-btn active" data-currency-switch="BDT" aria-pressed="true">🇧🇩 BDT (৳)</button>
+                    <button type="button" class="currency-btn" data-currency-switch="USD" aria-pressed="false">🌐 USD ($)</button>
+                </div>
+                <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20a%20digital%20subscription."
+                    target="_blank" rel="noopener noreferrer" class="btn-header">Buy on WhatsApp</a>
+                <button type="button" class="mobile-menu-toggle" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>⚡ INSTANT ACTIVATION &bull; BDT (৳) &amp; USD ($) ACCEPTED</span>
+                </div>
+                <h1>Premium Digital <span class="text-gradient">Subscriptions Catalog</span></h1>
+                <p class="hero-subtitle">Browse 42+ authentic AI, Developer, Productivity, Design, Career, and Cloud subscriptions delivered directly via WhatsApp within minutes. Looking for custom software, automation, or security? <a href="/services">Explore our 3-Tier Agency Packages →</a></p>
+            </div>
+        </section>
+
+        <!-- All Products Grid -->
+        <section class="featured-section">
+            <div class="section-header">
+                <span class="section-eyebrow">Verified Licenses &amp; Credits</span>
+                <h2>All Premium Subscriptions</h2>
+                <p>Filter by category or search below, switch between BDT (৳) and USD ($), and order with one click via WhatsApp</p>
+            </div>
+
+            <!-- Interactive Search & Category Filter Toolbar -->
+            <div class="catalog-toolbar">
+                <div class="catalog-search-row">
+                    <input type="search" id="product-search" class="catalog-search" placeholder="🔍 Search subscriptions (e.g., ChatGPT, LinkedIn, Copilot, Figma, AWS, n8n)..." aria-label="Search subscriptions">
+                    <span id="product-count" class="catalog-count">Showing 42 products</span>
+                </div>
+                <div class="service-filter-pills" role="tablist" aria-label="Filter Products by Category">
+                    <button type="button" class="filter-pill active" data-product-filter="all">All (42)</button>
+                    <button type="button" class="filter-pill" data-product-filter="AI">🤖 AI Tools</button>
+                    <button type="button" class="filter-pill" data-product-filter="Career">💼 Career &amp; LinkedIn</button>
+                    <button type="button" class="filter-pill" data-product-filter="Productivity">⚡ Productivity</button>
+                    <button type="button" class="filter-pill" data-product-filter="Dev Tools">💻 Dev Tools</button>
+                    <button type="button" class="filter-pill" data-product-filter="Design">🎨 Design</button>
+                    <button type="button" class="filter-pill" data-product-filter="Education">🎓 Education</button>
+                    <button type="button" class="filter-pill" data-product-filter="Utilities">🛠️ Utilities &amp; Video</button>
+                    <button type="button" class="filter-pill" data-product-filter="Cloud">☁️ Cloud</button>
+                    <button type="button" class="filter-pill" data-product-filter="Ads">📢 Ads</button>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <!-- Featured & Core Products -->
+                <article class="product-card" data-bdt="1800" data-usd="15">
+                    <div class="product-category">Career</div>
+                    <h3>LinkedIn Career Premium</h3>
+                    <p>Unlock premium features to get hired and grow your career for 3 months</p>
+                    <div class="product-price"><span>৳1,800</span> <span class="price-secondary">$15</span></div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20LinkedIn%20Career%20Premium" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card" data-bdt="1200" data-usd="10">
+                    <div class="product-category">AI</div>
+                    <h3>Google AI Pro</h3>
+                    <p>Access advanced AI models like Gemini and premium Google features for 1 month</p>
+                    <div class="product-price"><span>৳1,200</span> <span class="price-secondary">$10</span></div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Google%20AI%20Pro" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card" data-bdt="1200" data-usd="10">
+                    <div class="product-category">AI</div>
+                    <h3>ChatGPT Plus/Business</h3>
+                    <p>Priority access to GPT-4o, DALL-E, and advanced data analysis tools for 1 month</p>
+                    <div class="product-price"><span>৳1,200</span> <span class="price-secondary">$10</span></div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20ChatGPT%20Plus%2FBusiness" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <!-- Productivity Category -->
+                <article class="product-card" data-bdt="600" data-usd="5">
+                    <div class="product-category">Productivity</div>
+                    <h3>Superhuman</h3>
+                    <p>The fastest email experience ever made for 1 month</p>
+                    <div class="product-price"><span>৳600</span> <span class="price-secondary">$5</span></div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Superhuman" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card" data-bdt="1200" data-usd="10">
+                    <div class="product-category">Productivity</div>
+                    <h3>Microsoft 365</h3>
+                    <p>Complete Office suite with Word, Excel, PowerPoint, OneDrive, and Teams</p>
+                    <div class="product-price"><span>৳1,200</span> <span class="price-secondary">$10</span></div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Microsoft%20365" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card" data-bdt="600" data-usd="5">
+                    <div class="product-category">Productivity</div>
+                    <h3>Granola</h3>
+                    <p>AI-powered note-taking assistant for capturing and organizing thoughts</p>
+                    <div class="product-price"><span>৳600</span> <span class="price-secondary">$5</span></div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Granola" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card" data-bdt="950" data-usd="8">
+                    <div class="product-category">Productivity</div>
+                    <h3>n8n Cloud Starter</h3>
+                    <p>Workflow automation platform for connecting your favorite apps</p>
+                    <div class="product-price"><span>৳950</span> <span class="price-secondary">$8</span></div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20n8n%20Cloud" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card" data-bdt="1450" data-usd="12">
+                    <div class="product-category">Productivity</div>
+                    <h3>Canva Business</h3>
+                    <p>Premium design platform with brand kits and advanced collaboration</p>
+                    <div class="product-price"><span>৳1,450</span> <span class="price-secondary">$12</span></div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Canva%20Business" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card" data-bdt="850" data-usd="7">
+                    <div class="product-category">Productivity</div>
+                    <h3>Railway Hobby</h3>
+                    <p>Cloud deployment platform for developers building modern applications</p>
+                    <div class="product-price"><span>৳850</span> <span class="price-secondary">$7</span></div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Railway%20Hobby" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <!-- Education Category -->
+                <article class="product-card" data-bdt="850" data-usd="7">
+                    <div class="product-category">Education</div>
+                    <h3>Coursera</h3>
+                    <p>Online learning platform with thousands of courses from top universities</p>
+                    <div class="product-price"><span>৳850</span> <span class="price-secondary">$7</span></div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Coursera" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card" data-bdt="950" data-usd="8">
+                    <div class="product-category">Education</div>
+                    <h3>Udemy Premium</h3>
+                    <p>Access thousands of video courses on programming, design, and business</p>
+                    <div class="product-price"><span>৳950</span> <span class="price-secondary">$8</span></div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Udemy%20Premium" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card" data-bdt="720" data-usd="6">
+                    <div class="product-category">Education</div>
+                    <h3>Skillshare</h3>
+                    <p>Creative classes and learning community for all skill levels</p>
+                    <div class="product-price"><span>৳720</span> <span class="price-secondary">$6</span></div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Skillshare" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <!-- Developer Tools -->
+                <article class="product-card" data-bdt="350" data-usd="3">
+                    <div class="product-category">Dev Tools</div>
+                    <h3>GitHub EduPack</h3>
+                    <p>Student developer pack with premium tools and resources</p>
+                    <div class="product-price"><span>৳350</span> <span class="price-secondary">$3</span></div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20GitHub%20EduPack" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card" data-bdt="1200" data-usd="10">
+                    <div class="product-category">Dev Tools</div>
+                    <h3>GitHub Copilot</h3>
+                    <p>AI-powered code completion and suggestions for developers</p>
+                    <div class="product-price"><span>৳1,200</span> <span class="price-secondary">$10</span></div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20GitHub%20Copilot" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card" data-bdt="2400" data-usd="20">
+                    <div class="product-category">Dev Tools</div>
+                    <h3>Vercel Pro</h3>
+                    <p>Advanced web hosting and deployment platform for modern web apps</p>
+                    <div class="product-price"><span>৳2,400</span> <span class="price-secondary">$20</span></div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Vercel%20Pro" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <!-- AI & Design -->
+                <article class="product-card" data-bdt="2400" data-usd="20">
+                    <div class="product-category">AI</div>
+                    <h3>ChatGPT Plus</h3>
+                    <p>Advanced AI assistant with dedicated private GPT-4o access and priority support</p>
+                    <div class="product-price"><span>৳2,400</span> <span class="price-secondary">$20</span></div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20ChatGPT%20Plus" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card" data-bdt="1800" data-usd="15">
+                    <div class="product-category">AI</div>
+                    <h3>Mobbin Team</h3>
+                    <p>Design reference library with 10 seat access for teams</p>
+                    <div class="product-price"><span>৳1,800</span> <span class="price-secondary">$15</span></div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Mobbin%20Team" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <!-- Extended & Long-Term Subscriptions -->
+                <article class="product-card">
+                    <div class="product-category">AI</div>
+                    <h3>Gemini Pro with 5TB Drive (Annual)</h3>
+                    <p>Gemini Pro access bundled with 5TB cloud drive for 12 months</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Gemini%20Pro%20with%205TB%20Drive%20%28Annual%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">Design</div>
+                    <h3>Adobe Photoshop Pro (1 Year)</h3>
+                    <p>Professional photo editing subscription with premium features for 1 year</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Adobe%20Photoshop%20Pro%20%281%20Year%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">Design</div>
+                    <h3>Figma Professional (2 Years)</h3>
+                    <p>Long-term Figma Professional access for design workflows and collaboration</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Figma%20Professional%20%282%20Years%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">Design</div>
+                    <h3>Canva Pro (3 Years)</h3>
+                    <p>Extended Canva Pro access for creators and teams with premium templates</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Canva%20Pro%20%283%20Years%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">AI</div>
+                    <h3>Veo 3 Unlimited Video Generation</h3>
+                    <p>Generate high-quality videos with AI-powered creation workflows</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Veo%203%20Unlimited%20Video%20Generation" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">AI</div>
+                    <h3>Consensus.app (1 Year Premium)</h3>
+                    <p>AI-powered research assistant with premium access for 1 year</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Consensus.app%20%281%20Year%20Premium%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">Productivity</div>
+                    <h3>Linear Premium (3 Months)</h3>
+                    <p>Focused 3-month Linear Premium plan for short-term product delivery cycles</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Linear%20Premium%20%283%20Months%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">Productivity</div>
+                    <h3>Linear Premium (6 Months)</h3>
+                    <p>Extended 6-month Linear Premium plan for teams managing longer product roadmaps</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Linear%20Premium%20%286%20Months%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">AI</div>
+                    <h3>Perplexity AI (1 Month)</h3>
+                    <p>Try Perplexity AI premium features with a 1-month starter plan</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Perplexity%20AI%20%281%20Month%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">AI</div>
+                    <h3>Perplexity AI (6 Months)</h3>
+                    <p>Extended Perplexity AI premium access for consistent research and productivity</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Perplexity%20AI%20%286%20Months%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">AI</div>
+                    <h3>Perplexity AI (12 Months)</h3>
+                    <p>Annual Perplexity AI premium subscription for long-term use</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Perplexity%20AI%20%2812%20Months%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">AI</div>
+                    <h3>Grok AI (2 Months)</h3>
+                    <p>Access Grok AI tools and features for a 2-month period</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Grok%20AI%20%282%20Months%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">AI</div>
+                    <h3>Lamatic AI (3 Months)</h3>
+                    <p>Lamatic AI premium access package valid for 3 months</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Lamatic%20AI%20%283%20Months%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">Career</div>
+                    <h3>LinkedIn Premium (1 Month)</h3>
+                    <p>Upgrade your LinkedIn profile and visibility with 1-month premium access</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20LinkedIn%20Premium%20%281%20Month%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">Career</div>
+                    <h3>LinkedIn Sales Navigator (2 Months)</h3>
+                    <p>Find and engage leads with LinkedIn Sales Navigator for 2 months</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20LinkedIn%20Sales%20Navigator%20%282%20Months%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">Career</div>
+                    <h3>LinkedIn Premium (3 Months)</h3>
+                    <p>Sustain profile visibility and networking momentum with 3-month premium access</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20LinkedIn%20Premium%20%283%20Months%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">Education</div>
+                    <h3>edX (1 Year Subscription)</h3>
+                    <p>Access professional and academic learning tracks with a 1-year plan</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20edX%20%281%20Year%20Subscription%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">Education</div>
+                    <h3>Columbia University AI Course Enrollment Guidance</h3>
+                    <p>Consultation package for navigating Columbia AI course options and application pathways</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Columbia%20University%20AI%20Course%20Enrollment%20Guidance" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">Productivity</div>
+                    <h3>Notion (6 Months)</h3>
+                    <p>Organize notes, docs, and workflows with extended Notion access</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Notion%20%286%20Months%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">Education</div>
+                    <h3>Duolingo Super (1 Month)</h3>
+                    <p>Premium language learning features with Duolingo Super for 1 month</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Duolingo%20Super%20%281%20Month%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">Utilities</div>
+                    <h3>CapCut Pro (1 Month)</h3>
+                    <p>Advanced mobile and desktop video editing with CapCut Pro access</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20CapCut%20Pro%20%281%20Month%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">Utilities</div>
+                    <h3>Avira Phantom VPN Pro (3 Months)</h3>
+                    <p>Secure browsing and privacy tools with Avira Phantom VPN Pro</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20Avira%20Phantom%20VPN%20Pro%20%283%20Months%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">Ads</div>
+                    <h3>LinkedIn Ads Credits Enrollment Guidance</h3>
+                    <p>Support for eligible LinkedIn Ads promotional credit options (typically $100-$700)</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20LinkedIn%20Ads%20Credits%20Enrollment%20Guidance" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">Dev Tools</div>
+                    <h3>BrowserUse ($100 Credits)</h3>
+                    <p>Credits package for BrowserUse workflows and usage-based tooling</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20BrowserUse%20%28%24100%20Credits%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-category">Cloud</div>
+                    <h3>AWS Credits Enrollment Guidance (Up to $750)</h3>
+                    <p>Guidance service for eligible AWS promotional credit pathways and account setup</p>
+                    <div class="product-price">Contact for pricing</div>
+                    <a href="https://wa.me/zahidoverflow?text=Hi%20%40techoverflowbd!%20I%27m%20interested%20in%20AWS%20Credits%20Enrollment%20Guidance%20%28Up%20to%20%24750%29" target="_blank" rel="noopener noreferrer" class="btn btn-buy">Buy on WhatsApp</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Need Custom Automation, Website, App, or Security Audit?</h2>
+                <p>Explore our 3-Tier Fiverr-style Agency Service packages or request any custom software subscription.</p>
+                <div class="cta-buttons">
+                    <a href="/services" class="btn btn-primary btn-large">Explore Agency Service Packages</a>
+                    <a href="/contact" class="btn btn-secondary btn-large">Request Custom Subscription</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-brand">
+                    <a href="/" class="footer-brand-header" aria-label="Techoverflow Home">
+                        <img src="/logo.png" alt="Techoverflow Logo" class="footer-brand-logo" width="44" height="44">
+                        <strong>Techoverflow</strong>
+                    </a>
+                    <p>Full-service digital engineering agency &amp; premium subscription marketplace serving Bangladesh (BDT) and global clients (USD).</p>
+                    <div class="social-pills">
+                        <a href="https://wa.me/zahidoverflow" target="_blank" rel="noopener noreferrer" class="social-pill">💬 WhatsApp</a>
+                        <a href="https://facebook.com/techoverflowbd" target="_blank" rel="noopener noreferrer" class="social-pill">📘 @techoverflowbd</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Agency Services</h4>
+                <ul>
+                    <li><a href="/services#service-automation">Business Automation &amp; AI</a></li>
+                    <li><a href="/services#service-ecommerce">E-commerce Development</a></li>
+                    <li><a href="/services#service-webdev">Website Development</a></li>
+                    <li><a href="/services#service-android">Android App Development</a></li>
+                    <li><a href="/services#service-cybersecurity">Cybersecurity &amp; VAPT</a></li>
+                    <li><a href="/services#service-solutions">UI/UX, Cloud &amp; AI Solutions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services">Service Packages</a></li>
+                    <li><a href="/products">Subscriptions Catalog</a></li>
+                    <li><a href="/contact#faq">FAQ</a></li>
+                    <li><a href="/contact">Contact &amp; Custom Quote</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Official Contact</h4>
+                <ul>
+                    <li><a href="https://wa.me/zahidoverflow" target="_blank" rel="noopener noreferrer">WhatsApp: wa.me/zahidoverflow</a></li>
+                    <li><a href="https://facebook.com/techoverflowbd" target="_blank" rel="noopener noreferrer">Facebook: @techoverflowbd</a></li>
+                    <li><a href="mailto:info@techoverflow.tech">Email: info@techoverflow.tech</a></li>
+                    <li><a href="tel:+8809638526929">Phone: +880 9638-526929</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Techoverflow (<strong>@techoverflowbd</strong>). All rights reserved. &bull; <a href="/privacy">Privacy Policy</a> &bull; <a href="/terms">Terms of Service</a> &bull; <a href="https://facebook.com/techoverflowbd" target="_blank" rel="noopener noreferrer">Facebook</a> &bull; <a href="https://wa.me/zahidoverflow" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Bottom Bar -->
+    <nav class="mobile-nav" aria-label="Mobile quick actions">
+        <a class="mobile-nav__item" href="/">Home</a>
+        <a class="mobile-nav__item" href="/services">Services</a>
+        <a class="mobile-nav__item" href="/products">Products</a>
+        <a class="mobile-nav__item mobile-nav__item--accent" href="https://wa.me/zahidoverflow" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </nav>
+
+    <script src="/script.js?v=3.2" defer></script>
 </body>
+
 </html>
